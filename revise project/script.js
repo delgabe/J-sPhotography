@@ -1,60 +1,4 @@
-/*let num;
-let item = [];
-let origin = [
-  document.getElementsByClassName("item1")[0],
-  document.getElementsByClassName("item2")[0],
-  document.getElementsByClassName("item3")[0],
-  document.getElementsByClassName("item4")[0],
-  document.getElementsByClassName("item5")[0],
-  document.getElementsByClassName("item6")[0]
-  ]
-
-  for (let i = 0; i<origin.length; i++){
-     item[i] = origin[i].className;
-    }
-
-
-function change(num){
-  if(num === 1){
-    let elements = [
-      document.getElementsByClassName("item1")[0],
-      document.getElementsByClassName("item2")[0],
-      document.getElementsByClassName("item3")[0],
-      document.getElementsByClassName("item4")[0],
-      document.getElementsByClassName("item5")[0],
-      document.getElementsByClassName("item6")[0]
-      ]
-      elements[0].className = item[0];
-      elements[1].className = item[1];
-      elements[2].className = item[2]; 
-      elements[3].className = item[3]; 
-      elements[4].className = item[4]; 
-      elements[5].className = item[5]; 
-    
-  }
-  if(num === 2){
-    
-    let elements = [
-      document.getElementsByClassName("item1")[0],
-      document.getElementsByClassName("item2")[0],
-      document.getElementsByClassName("item3")[0],
-      document.getElementsByClassName("item4")[0],
-      document.getElementsByClassName("item5")[0],
-      document.getElementsByClassName("item6")[0]
-      ]
-         
-        elements[0].className = item[5];
-        elements[1].className = item[0];
-        elements[2].className = item[1]; 
-        elements[3].className = item[2]; 
-        elements[4].className = item[3]; 
-        elements[5].className = item[4]; 
-
-      
-    
-  }
-}*/
-
+let num = 1;
 let item = [
   document.getElementsByClassName("item1")[0],
   document.getElementsByClassName("item2")[0],
@@ -76,16 +20,7 @@ for (let i = 0; i<item.length; i++){
  
 
     function change(num){
-      window.addEventListener("resize", () => {
-        if (window.innerWidth < 600) {
-          for (let i = 0; i < item.length; i++) {
-            item[i].style.transform = "";
-            item[i].style.opacity = "";
-            item[i].style.zIndex = "";
-          }
-        }
-      });
-      if (window.innerWidth >= 600) {
+      
       if(num===1){
         for (let i = 0; i<item.length; i++){
           item[i].style.transform = transform[i];
@@ -165,4 +100,23 @@ for (let i = 0; i<item.length; i++){
       }
     }
 
-  } 
+  
+
+
+  let i = num;
+
+  function loop() {
+    setTimeout(() => {
+      change(i);
+        
+      i++;
+      if (i === 7) {
+        i = 1;
+      }
+  
+      loop(); 
+    }, 3000); 
+  }
+  
+  loop();
+  

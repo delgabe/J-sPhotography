@@ -112,7 +112,6 @@ body{
 .showcase .tagline {
   display: flex;
   align-items: center;
-  flex: 1.2;
   background-image: url("image/bg.jpg");
   background-color:rgba(255, 255, 255, 0);
   background-blend-mode: lighten;
@@ -125,7 +124,7 @@ body{
   align-items: center;
   background-color: rgba(255, 255, 255, 0.88);
   width: 100%;
-  height: 80%;
+  height: 90%;
 }
 
 .company-name{
@@ -136,17 +135,19 @@ body{
 }
 
 .company{
+  padding-top: 50px;
   display: flex;
-  align-items: end;
+  align-items: center;
+  height: 200px;
 }
 
 .logo{
-  margin-top: 40px;
+
   width: 200px;
 }
 
 h4{
-  
+  margin-bottom: 40px;
   margin-top: 0px;
 }
 
@@ -272,18 +273,14 @@ h4{
   }
 
   .burgermen{
+    width: 50px;
     margin-left: 260px;
     display:inline-block;
   }
    
   .showcase .tagline {
-    display: flex;
-    align-items: center;
-    flex: .5;
-    background-image: url("image/bg.jpg");
-    background-color:rgba(255, 255, 255, 0.388);
-    background-blend-mode: lighten;
-    }
+    height: 260px;  
+  }
 
   .tagline .tagline-text{
     display: flex;
@@ -292,7 +289,7 @@ h4{
     align-items: center;
     background-color: rgba(255, 255, 255, 0.88);
     width: 100%;
-    height: 80%;
+    height: 70%;
   }
   .showcase{
     display: flex;
@@ -320,42 +317,16 @@ h4{
 
   .showcase .carousel {
      margin-bottom: 130px;
+     overflow:hidden;
    }
 
   .showcase .carousel .carousel-header{
     font-size: 20px;
     display: flex;
     align-items: center;
+   
    }
-   .item1{
-    transform: translate(0, 0) rotateY(0);
-    z-index: 6;
-  }
-  .item2{
-    transform: translate(0, 0) rotateY(0);
-    z-index: 5;
-    opacity: .5;
-  }
-  .item3{
-    transform: translate(0, 0) rotateY(0);
-    z-index: 4;
-    opacity: .1;
-  }
-  .item4{
-    transform: translate(0, 0) rotateY(0);
-    z-index: 3;
-    opacity: .1;
-   }
-  .item5{
-    transform: translate(0, 0) rotateY(0);
-    z-index: 4;
-    opacity: .1;
-  }
-  .item6{
-    transform: translate(0, 0) rotateY(0);
-    
-    z-index: 5;
-    opacity: .5;
+   
   }
   .package .package-header{
     display: flex;
