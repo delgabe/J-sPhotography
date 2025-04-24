@@ -94,6 +94,11 @@ body{
   width: 15%;
 }
 
+a{
+  color: white;
+  text-decoration: none;
+}
+
 .burgermen{
   width: 70px;
   display: none;
