@@ -17,7 +17,7 @@ body{
   background-color: rgb(255, 255, 255);
   height: 100%;
   position: fixed;
-  z-index: 2;
+  z-index: 100;
 }
 
 .right-body{
@@ -176,7 +176,6 @@ h5{
   align-items: center;
   flex: 2.5;
   margin-top: 30px;
-  margin-bottom: 230px;
  }
 
  .showcase .carousel .carousel-header{
@@ -241,6 +240,7 @@ h5{
   width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 25px;
 }
 
 span{
@@ -266,11 +266,10 @@ span{
   text-align: center;
   align-items: center;
   width: 100%;
-  flex: 1.5;
-  font-size: 40px;
+  font-size: 30px;
   font-family:Poppins;
   font-weight: bold;
-  color: rgb(114, 95, 95);
+  color: rgb(107, 89, 89);
  }
 .package .packages{
   display: flex;
@@ -280,7 +279,7 @@ span{
   padding-top: 3%;
   padding-bottom: 3%;
   justify-content: space-evenly;
-  flex: 2;
+  height: 400px;
   border-radius: 40px;
   }
 
