@@ -401,6 +401,11 @@ span{
 
 /* Contact Page CSS */
 
+.contact-page{
+  display: flex;
+  flex-direction: row;
+}
+
 .contact-navigation{
   display: flex;
   flex-direction: row;
@@ -423,7 +428,9 @@ span{
 }
 
 .contact-logo-nav img{
-  width: 100px;
-  height: auto;
-  margin-left: 20px;
+  
+}
+
+.contact-navigation{
+  
 }
