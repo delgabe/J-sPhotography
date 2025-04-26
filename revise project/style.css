@@ -118,7 +118,25 @@ body{
 a{
   color: white;
   text-decoration: none;
+  position: relative;
 }
+
+ a::after {
+  
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  background-color: #ffffff; 
+  transition: width 0.3s ease;
+}
+
+a:hover::after {
+  width: 100%;
+}
+
 
 .burgermen{
   width: 70px;
@@ -130,7 +148,7 @@ a{
 .showcase{
   display: flex;
   flex-direction: column;
-  flex: 6;
+  flex: 9;
   background-color:  rgb(255, 255, 255);
   margin-top: 100px;
 }
@@ -274,12 +292,49 @@ span{
   font-weight: 600;
 }
 
+/*introduction*/
+
+.introduction{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 350px;
+  margin-bottom: 100px;
+  height: 400px;
+ 
+}
+
+.intro-photo .camera {
+  width: 400px;
+  margin-right: 20px;
+}
+
+.intro-text{
+  width: 500px;
+}
+
+.intro-text .intro-header{
+  font-family: Poppins;
+  font-size: 30px;
+  height: 100px;
+  color: rgb(107, 89, 89);
+  font-weight: bold;
+}
+
+.intro-text .intro-body{
+  font-family: Poppins;
+  font-size: 15px;
+  height: 100px;
+  color: rgb(107, 89, 89);
+  text-align: justify;
+}
+
 /* package */
 .package{
-  margin-top: 400px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
-  flex: 6;
+  flex: 8.5;
   
 }
 
