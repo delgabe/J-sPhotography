@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+}
+
+/* Animate and Design for <a> tag links */
+a {
+    position: relative;
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold;
+  }
+  
+  a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #000000; 
+    transition: width 0.3s ease;
+  }
+  
+  a:hover::after {
+    width: 100%;
+  }
+  
+
+.contact-page{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    height: 1500px;
+    width: 100%;
+  }
+  
+  .contact-nav-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .contact-navigation{
+    display: flex;
+    flex-direction: row;
+    margin-right: 100px; 
+    justify-content: start;
+    font-family: Lato;
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFFAEC ;
+    
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color:  rgb(216, 211, 211);
+    z-index: 100;
+    padding-left: 1%;
+  }
+  
+  .company-logo-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-self: start;
+    height: 100%;
+    width: 20%;
+    margin-left: 20px;
+  }
+  
+  .company-logo-nav h1{
+    font-size: 20px;
+    color:rgb(125, 133, 106);
+    font-family:Poppins; 
+    padding-top: 37px; 
+    padding-left: 8px;
+    margin: 0;
+  }
+  
+  .company-logo-nav img{
+    width: 70px;
+    height: 70px;
+    margin-top: 15px;
+  }
+  
+  .urls-contact{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    width: 50%;
+    height: 100%;
+  }
+  
+  /* Text for Links */
+  .urls-contact a{
+    color: rgb(0, 0, 0)
+  }
+
+  .home, .gallery, .about, .contact{
+    width: 15%;
+    min-width: 10%;
+  }
