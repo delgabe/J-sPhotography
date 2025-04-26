@@ -169,6 +169,13 @@ body{
     padding-left: 100px;
 }
 
+.get-in-touch-box2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+}
 .get-in-touch-box h1{
     font-size: 45px;
     font-weight: 600;
@@ -197,16 +204,18 @@ body{
 }
 
 .contact-info{
+    width: 300px;
+    text-align: center;
     font-family: Poppins;
     font-size: 15px;
-    margin: 0 0 30px 0;
+    margin: 0 0 0 0;
 }
 
 .social-text{
     margin-top: 40px;
     width: 300px;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
     
 }
