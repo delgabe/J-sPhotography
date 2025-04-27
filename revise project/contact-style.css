@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     flex: 1;
-    height: 1500px;
+    height: 1000px;
     width: 100%;
 }
   
@@ -49,7 +49,7 @@ body{
     font-weight: 600;
     writing-mode: sideways-lr; 
     width: 100%;
-    height: 30%;
+    height: 30.5%;
     margin: 0;
 }
   
@@ -97,10 +97,9 @@ body{
   font-weight: normal;
   display: inline-block;
 }
-  
+
 .company-logo-nav img{
     width: 70px;
-    
     margin-right: 20px;
 }
   
@@ -153,8 +152,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
-    width: 100%;
+    align-items: flex-end;
+    width: 18%;
     height: 80%;
     margin-top: 100px;
     margin-left: 80px;
@@ -166,7 +165,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 300px;
+    width: 90%;
 }
 .get-in-touch-box h1{
     font-size: 45px;
@@ -178,14 +177,14 @@ body{
 
 #lens-png {
     display: inline-block;
-    width: 40px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     background-image: url("contact-imgs/lens.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     vertical-align: middle;
-    margin: 2px -5px 6px -5px;
+    margin: 5% 0% 6% -2%;
 }  
 
 .vertical-line{
@@ -196,7 +195,7 @@ body{
 }
 
 .contact-info{
-    width: 300px;
+    width: 90%;
     text-align: center;
     font-family: Poppins;
     font-size: 15px;
