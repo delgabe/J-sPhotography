@@ -356,6 +356,7 @@ span{
   animation: opacityanima linear 1s;
   animation-timeline: view();
   animation-range: entry 30% cover 40% ;
+  
 }
 
 .intro-text .intro-nav{
