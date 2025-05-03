@@ -1,8 +1,8 @@
-body{
+body {
     margin: 0;
 }
   
-.contact-page{
+.contact-page {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -60,7 +60,7 @@ body{
   
 
 /* Navigation Section */
-.contact-nav-body{
+.contact-nav-body {
     margin-left: 80px;
     display: flex;
     flex-direction: column;
@@ -68,42 +68,42 @@ body{
     width: 100%;
 }
   
-.contact-navigation{
+.contact-navigation {
     display: flex;
-  flex-direction: row;
-  justify-content: end;
-  margin-right: 100px;
-  font-family: Lato;
-  font-size: 20px;
-  color: #FFFAEC ;
-  align-items: center;
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  background-color:  rgb(0, 0, 0);
-  z-index: 100;
-  margin-right: 20px;
+    flex-direction: row;
+    justify-content: end;
+    margin-right: 100px;
+    font-family: Lato;
+    font-size: 20px;
+    color: #FFFAEC ;
+    align-items: center;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    background-color:  rgb(0, 0, 0);
+    z-index: 100;
+    margin-right: 20px;
 }
   
-.company-logo-nav{
+.company-logo-nav {
     display: flex;
     align-items: center;
-  position: absolute;
-  left: 6%;
+    position: absolute;
+    left: 6%;
 }
   
-.company-logo-nav h1{
+.company-logo-nav h1 {
     font-size: 20px;
-  font-weight: normal;
-  display: inline-block;
+    font-weight: normal;
+    display: inline-block;
 }
 
-.company-logo-nav img{
+.company-logo-nav img {
     width: 70px;
     margin-right: 20px;
 }
   
-.urls-contact{
+.urls-contact {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -114,17 +114,17 @@ body{
 }
   
   /* Text for Links */
-.urls-contact a{
+.urls-contact a {
     color: rgb(255, 255, 255)
 }
 
-.home, .gallery, .about, .contact{
+.home, .gallery, .about, .contact {
     width: 15%;
     min-width: 10%;
 }
 
   /* Animate and Design for <a> tag links */
-.urls-contact a{
+.urls-contact a {
     position: relative;
     text-decoration: none;
     font-weight: 500;
@@ -146,28 +146,36 @@ body{
     width: 100%;
 }
 
+.contact-leftpage-section {
+    display: flex;
+    flex-direction: row;
+    margin-left: 4.3%; 
+    margin-top: 0;
+    height: 100%;
+    width: calc(100% - 80px);
+}
 
 /* Get in Touch Section Box */
-.get-in-touch-box{
+.get-in-touch-box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-end;
     width: 18%;
     height: 80%;
-    margin-top: 100px;
-    margin-left: 80px;
-    padding-left: 100px;
+    margin-top: 7%;
+    margin-left: 4%;
+    margin-right: 3%;
 }
 
-.get-in-touch-box2{
+.get-in-touch-box2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
 }
-.get-in-touch-box h1{
+.get-in-touch-box h1 {
     font-size: 45px;
     font-weight: 600;
     color: rgb(0, 0, 0);
@@ -187,31 +195,32 @@ body{
     margin: 5% 0% 6% -2%;
 }  
 
-.vertical-line{
+.vertical-line {
     height: 1px;
-    width: 300px;
+    width: 100%;
     background-color: rgb(0, 0, 0);
     margin: 8px 0 10px 0;
+    align-self: stretch;
 }
 
-.contact-info{
-    width: 90%;
+.contact-info {
+    width: 100%;
     text-align: center;
     font-family: Poppins;
     font-size: 15px;
     margin: 0 0 0 0;
 }
 
-.social-text{
-    margin-top: 40px;
-    width: 300px;
+.social-text {
+    margin-top: 15%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     
 }
 
-.social-text h1{
+.social-text h1 {
     font-size: 45px;
     font-weight: 400;
     color: rgb(0, 0, 0);
@@ -222,11 +231,10 @@ body{
 .social-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    gap: 15% 10%;
     width: 100%;
     max-width: 300px;
-    margin-top: 20px;
-    justify-items: center;
+    justify-items: start;
 }
   
 .social-grid a img {
@@ -240,3 +248,97 @@ body{
     transform: scale(1.1);
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }  
+
+/* Contact Form Section */
+.right-contact-section {
+    flex: 1;
+    padding: 0;
+    margin-top: 0%;
+}
+
+.intro-text-contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    background-color: #698b7e;
+}
+
+.intro-text-contact-form h1 {
+    font-family: Poppins;
+    font-weight: bold;
+    font-size: 180%;
+    text-align: center;
+    color: white;
+    padding: 1%;
+}
+
+#SHOOT-text-format {
+    color: #f7b893;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .contact-page {
+        flex-direction: column;
+    }
+
+    .left-contact-section {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .left-contact-section p {
+        writing-mode: horizontal-tb;
+        transform: rotate(0deg);
+        font-size: 14px;
+    }
+
+    .left-contact-section .vertical-line {
+        display: none;
+    }
+
+    .left-contact-section img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .get-in-touch-box {
+        padding-left: 0;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .get-in-touch-box h1, .get-in-touch-box h2 {
+        text-align: center;
+    }
+    
+    .get-in-touch-box p {
+        text-align: center;
+    }
+    
+    .contact-navigation {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .social-grid {
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        row-gap: 15px;
+    }
+    
+    .right-contact-section {
+        display: none;
+    }
+}
