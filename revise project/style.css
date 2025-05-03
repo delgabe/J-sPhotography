@@ -148,9 +148,9 @@ body{
 .showcase{
   display: flex;
   flex-direction: column;
-  flex: 9;
   background-color:  rgb(255, 255, 255);
   margin-top: 100px;
+  height: 800px;
 }
 
 
@@ -213,7 +213,6 @@ h5{
   flex-direction: column;
   position: relative;
   align-items: center;
-  flex: 2.5;
   margin-top: 30px;
  }
 
@@ -662,15 +661,17 @@ span{
 
   .showcase .carousel {
     margin-top: 0;
-    margin-bottom: 130px;
+    margin-bottom: 0;
     padding-bottom: 20px;
     overflow:hidden;
+    height: 100%;
+    flex: 0.5;;
    }
 
    
   .showcase .carousel .banner{
     width: 400px;
-   }
+  }
   .showcase .carousel .carousel-header{
     height: 120px;
     font-size: 20px;
@@ -681,21 +682,23 @@ span{
   .introduction{
     flex-direction: column;
     align-items: center;
+    margin-top: 0;
  }
 
- .intro-text{
+  .intro-text{
     display: flex;
     flex-direction: column;
     width: 90%;
 }
 
-.intro-header{
-  text-align: center;
-  font-size: 60px;
+  .intro-text .intro-header{
+    font-size: 25px;
+    height: 45px;
+    text-align: center;
 }
 
-.intro-photo .camera {
-  width: 100px;
+  .intro-photo .camera {
+    width: 100px;
 }  
    
   .package .package-header{
@@ -711,21 +714,70 @@ span{
 
   .package .packages {
     display: flex;
+    height: 800px;
     flex-direction: column;
     padding-bottom: 3%;
     padding-left: 2%;
     padding-right: 2%;
     align-items: center;
     border: transparent;
+    animation: none;
+    opacity: 1;
   }
+  
 
   .package1, .package2, .package3, .package4{
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(118, 82, 82, 0.241);
-    height: 70%;
     width: 100%;
     margin-bottom: 3px;
-    border-radius: 3px ;
+    border-radius: 3px;
+    height: 100%;
+  }
+
+  .package1:hover{
+    scale: 1.1;
+  }
+  
+  .package2:hover{
+    scale: 1.1;
+  }
+  
+  .package3:hover{
+    scale: 1.1;
+  }
+  
+  .package4:hover{
+    scale: 1.1;
+  }
+
+  .package-type1, .package-type2, .package-type3, .package-type4{
+    font-size: 25px;
+    font-weight: 650;
+    transform: translate(0, 0);
+  } 
+
+  .package-logo{
+    width: 40px;
+    transform: translate(0, 0);
+  }
+  
+  .package-price1, .package-price2, .package-price3, .package-price4{
+    font-size: 25px;
+    font-weight: bold;
+    transform: translate(0, -5px);
+  } 
+    
+  .subprice{
+    font-size: 12px;
+    transform: translate(0, -10px);
+    margin-bottom: -3px;
+  }
+  
+  .seemore{
+    font-size: 14px;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
   }
 
   .box1{
@@ -734,9 +786,23 @@ span{
     margin-top:100px !important;
   }
 
-  
+  .footer{
+    flex-direction: column ;
+    height: 500px;
+  }
+
   .footer-wrapper{
     flex-direction: column;
+  }
+  
+  .rd-col-top{
+    margin-top: 0;
+    position:static;
+    transform: translate(190px , 0);
+  }
+  .footnote{
+   
+    
   }
   
 }
