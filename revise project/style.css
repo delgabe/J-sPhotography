@@ -605,6 +605,11 @@ span{
   width: 130px;
   height: 30px;
 }
+
+.go-top{
+  text-decoration: none;
+  color: #000;
+}
 @media only screen and (max-width: 600px) {
   .navigation{
     justify-content: center;
@@ -626,6 +631,7 @@ span{
 
   .tagline{
     height: 200px;
+    margin-bottom: 20px;
   }
 
   .tagline .tagline-text{
@@ -638,10 +644,8 @@ span{
     height: 100%;
   }
 
-  .showcase{
-    display: flex;
-    flex-direction: column;
-    margin-top: 120px;
+  .showcase{   
+    height: 800px;
   }
 
   .company-name{
@@ -663,22 +667,25 @@ span{
     margin-top: 0;
     margin-bottom: 0;
     padding-bottom: 20px;
-    overflow:hidden;
-    height: 100%;
-    flex: 0.5;;
-   }
-
+    overflow:hidden;  
+  }
    
   .showcase .carousel .banner{
     width: 400px;
+    height: 2000px;
   }
+
   .showcase .carousel .carousel-header{
-    height: 120px;
     font-size: 20px;
     display: flex;
-    align-items: center;
+    align-items: start;
+    height: 300px;
     }
 
+  .showcase .carousel img{
+    height:300px ;
+
+  }
   .introduction{
     flex-direction: column;
     align-items: center;
@@ -706,7 +713,6 @@ span{
     text-align: center;
     align-items: center;
     width: 100%;
-    flex: .5;
     font-family:Poppins;
     font-weight: bold;
     font-size: 20px;
@@ -789,6 +795,7 @@ span{
   .footer{
     flex-direction: column ;
     height: 500px;
+    margin-top: 10px;
   }
 
   .footer-wrapper{
@@ -798,12 +805,9 @@ span{
   .rd-col-top{
     margin-top: 0;
     position:static;
-    transform: translate(190px , 0);
+    transform: translate(190px , -30px);
   }
-  .footnote{
-   
-    
-  }
+  
   
 }
 
