@@ -302,7 +302,7 @@ span{
   margin-top: 350px;
   margin-bottom: 100px;
   height: 400px;
- 
+  width: 100%;
 }
 
 .intro-photo .camera {
@@ -331,10 +331,11 @@ span{
     transform: rotate(0);
   }
 }
+
 .intro-text{
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 30%;
   z-index: 2;
 }
 
@@ -375,7 +376,9 @@ span{
   font-family: Poppins;
   font-size: 15px;
   color: rgb(0, 0, 0);
+  text-decoration: none;
 }
+
 
 /* package */
 .package{
@@ -674,8 +677,28 @@ span{
     display: flex;
     align-items: center;
     }
+
+  .introduction{
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .intro-text{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.intro-header{
+  text-align: center;
+  font-size: 60px;
+}
+
+.intro-photo .camera {
+  width: 100px;
+}  
    
-    .package .package-header{
+  .package .package-header{
     display: flex;
     text-align: center;
     align-items: center;
