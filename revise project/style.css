@@ -115,13 +115,13 @@ body{
   min-width: 10%;
 }
 
-a{
+.link{
   color: white;
   text-decoration: none;
   position: relative;
 }
 
- a::after {
+.link::after {
   
   content: '';
   position: absolute;
@@ -133,7 +133,7 @@ a{
   transition: width 0.3s ease;
 }
 
-a:hover::after {
+.link:hover::after {
   width: 100%;
 }
 
@@ -352,7 +352,7 @@ span{
   font-family: Poppins;
   font-size: 15px;
   height: 160px;
-  color: rgb(107, 89, 89);
+  color: rgb(57, 51, 51);
   text-align: justify;
   animation: opacityanima linear 1s;
   animation-timeline: view();
@@ -526,17 +526,14 @@ span{
   margin-bottom: 10px;
 }
 
-.button-seemore{
+.seemore{
   font-size: 14px;
   border: 1px solid rgb(2, 2, 2);
-  background-color: white;
   border-radius: 30px;
   padding: 10px 30px 10px 30px;
-}
-
-.seemore{
   font-family: Poppins;
   color: #000;
+  text-decoration: none;
 }
 
 @keyframes opacityanima{
