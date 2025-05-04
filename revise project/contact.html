@@ -16,9 +16,9 @@
       <!--sidebar-->
       <aside class="sidenav">
         <div class="socials">
-          <img src="image/fb.png" />
-          <img src="image/ig.png" />
-          <img src="image/x.png" />
+          <img src="image/fb.png" alt="Facebook Icon"/>
+          <img src="image/ig.png" alt="Instagram Icon"/>
+          <img src="image/x.png" alt="Twitter/X Icon"/>
         </div>
         <div class="visit-container">
           <h1 class="visit-text">
@@ -32,7 +32,7 @@
         <!--navigation container-->
         <div class="contact-navigation">
           <div class="company-logo-nav">
-            <img src="image/logo.png" />
+            <img src="image/logo.png" alt="Company Logo" />
             <h1>J's Photography</h1>
           </div>
 
@@ -45,7 +45,7 @@
         </div>
       </section>
 
-      <div class="contact-leftpage-section">
+      <div class="contact-section">
         <!--Get In Touch Section-->
         <div class="get-in-touch-box">
           <div class="get-in-touch-box2">
@@ -105,7 +105,7 @@
 
           <!--Contact Form-->
           <div class="contact-form-box">
-            <form class="contact-form">
+            <form class="contact-form" action="???????.php" method="POST">
               <div class="form-row">
                 <div class="form-fname">
                   <label for="fname">FULL NAME</label>
@@ -121,13 +121,37 @@
               <div class="form-row2">
                 <div class="form-phonenum">
                   <label for="phonenum">PHONE NUMBER</label>
-                  <input type="tel" id="phonenum" name="phonenum" placeholder="09XXXXXXXXX" required />
+                  <input type="tel" id="phonenum" name="phonenum" placeholder="09XXXXXXXXX" minlength="11" required />
                 </div>
 
                 <div class="form-shootdate">
                   <label for="shootdate">SHOOT DAY</label>
                   <input type="date" id="shootdate" name="shootdate" required />
                 </div>
+              </div>
+
+              <div class="form-row3">
+                <div class="form-type-package">
+                  <label for="package">WHAT TYPE OF SESSION/PACKAGE ARE YOU INTERESTED IN?</label>
+                  <select id="package-type" name="package" required>
+                    <option value="wedding">Wedding</option>
+                    <option value="engagement">Engagement</option>
+                    <option value="family">Family</option>
+                    <option value="debut">Debut</option>
+                    <option value="event">Event</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row4">
+                <div class="form-more-info">
+                  <label for="moreInfo">Additional Information</label>
+                  <textarea id="moreInfo" placeholder="Write your thoughts and suggestions."></textarea>
+                </div>
+              </div>
+              
+              <div class="submit-button-container">
+                <button type="submit" id="submit-button">SUBMIT</button>
               </div>
             </form>
           </div>
