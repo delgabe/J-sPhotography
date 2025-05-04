@@ -70,7 +70,7 @@
             <a href="https://facebook.com" target="_blank"
               ><img src="contact-imgs/facebook.png" alt="Facebook"
             /></a>
-            <a href="http://messenger.com/.com"
+            <a href="https://messenger.com" target="_blank"
               ><img src="contact-imgs/messenger.png" alt="Messenger"
             /></a>
             <a href="https://instagram.com" target="_blank"
@@ -104,12 +104,33 @@
           </div>
 
           <!--Contact Form-->
-          <form class="contact-form">
-            <div class="form-fname">
-              <label for="fname">FULL NAME</label>
-              <input type="text" id="fname" name="fname" required />
-            </div>
-          </form>
+          <div class="contact-form-box">
+            <form class="contact-form">
+              <div class="form-row">
+                <div class="form-fname">
+                  <label for="fname">FULL NAME</label>
+                  <input type="text" id="fname" name="fname" placeholder="Enter your full name." required />
+                </div>
+
+                <div class="form-email">
+                  <label for="email">EMAIL</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email." required />
+                </div>
+              </div>
+
+              <div class="form-row2">
+                <div class="form-phonenum">
+                  <label for="phonenum">PHONE NUMBER</label>
+                  <input type="tel" id="phonenum" name="phonenum" placeholder="09XXXXXXXXX" required />
+                </div>
+
+                <div class="form-shootdate">
+                  <label for="shootdate">SHOOT DAY</label>
+                  <input type="date" id="shootdate" name="shootdate" required />
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
