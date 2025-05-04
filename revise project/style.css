@@ -1,7 +1,9 @@
-body{
-  margin: 0;
-  
+
+
+html{
+  width: 100%;
 }
+
 
 .main{
   display: flex;
@@ -185,7 +187,6 @@ body{
 }
 
 .logo{
-
   width: 200px;
 }
 
@@ -593,6 +594,10 @@ span{
   background-color: rgb(91, 81, 81);
 }
 
+.nd-col-faq{
+  cursor: pointer;
+}
+
 .rd-col-top{
   position: absolute;
   padding-top: 4px;
@@ -796,7 +801,7 @@ span{
 
   .box1{
     height: 500px;
-    width: 400px !important;
+    width: 350px !important;
     margin-top:100px !important;
   }
 
@@ -813,14 +818,14 @@ span{
   .rd-col-top{
     margin-top: 0;
     position:static;
-    transform: translate(230px , -30px);
+    transform: translate(10px , -30px);
   }
   
   .botbutton{
-    width: 80px !important;
-    height: 80px  !important;
-    bottom: 120px  !important;
-    
+    width: 70px !important;
+    height: 70px  !important;
+    bottom: 60px  !important;
+        
   }
   
 }
@@ -836,17 +841,18 @@ span{
 /* Chatbot button */
 .botbutton {
   position: fixed;
-  bottom: 40px;     /* Distance from the bottom */
-  right: 40px;      /* Distance from the right */
+  bottom: 50px;     /* Distance from the bottom */
+  right: 80px;      /* Distance from the right */
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #f4f4f4;
+  background-color: #cdd9db;
   border: none;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 1px  rgba(0, 0, 0, 0.726);
   padding: 10px;
   z-index: 999;
+  padding: 0;
 }
 .botbutton:hover {
   background-color: #4f4e4e;
@@ -902,7 +908,7 @@ span{
 }
 
 .chat-header {
-  background: rgb(65, 54, 54);
+  background: rgb(10, 8, 8);
   color: white;
   padding-left: 20px;
   display: flex;
@@ -947,11 +953,14 @@ span{
 .message-bubble {
   background-color: #ebe8e5;
   color: #1d1d1d;
+  font-weight: bold;
+  text-align: center;
   padding: 12px;
   border-radius: 16px;
   border-top-left-radius: 0;
   max-width: 250px;
   font-size: 15px;
+  
 }
 
 .user-message {
