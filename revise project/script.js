@@ -119,4 +119,39 @@ for (let i = 0; i<item.length; i++){
   }
   
   loop();
+  function toggleChat() {
+    const panel = document.getElementById('chatPanel');
+    const overlay = document.getElementById('chatOverlay');
+    
+    panel.classList.toggle('open');
+    overlay.classList.toggle('visible');
+  }
   
+  function addUserMessage(text) {
+      const chatContent = document.querySelector('.chat-content');
+    
+      const userMessage = document.createElement('div');
+      userMessage.classList.add('user-message');
+      userMessage.innerHTML = `<div class="user-bubble">${text}</div>`;
+    
+      chatContent.appendChild(userMessage);
+      chatContent.scrollTop = chatContent.scrollHeight;
+    }
+    
+    function addBotReplyWithLink(text, linkText, linkHref) {
+      const chatContent = document.querySelector('.chat-content');
+    
+      const botMessage = document.createElement('div');
+      botMessage.classList.add('bot-message');
+      botMessage.innerHTML = `
+        <img src="image/botpic.png" alt="Bot" class="bot-icon" />
+        <div class="message-bubble">
+          ${text}<br/>
+          <a href="${linkHref}" class="bot-link">${linkText}</a>
+        </div>
+      `;
+    
+      chatContent.appendChild(botMessage);
+      chatContent.scrollTop = chatContent.scrollHeight;
+    }
+    
