@@ -119,6 +119,8 @@ for (let i = 0; i<item.length; i++){
   }
   
   loop();
+
+  
   function toggleChat() {
     const panel = document.getElementById('chatPanel');
     const overlay = document.getElementById('chatOverlay');
