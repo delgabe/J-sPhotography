@@ -6,10 +6,24 @@ let item = [
   document.getElementsByClassName("item4")[0],
   document.getElementsByClassName("item5")[0],
   document.getElementsByClassName("item6")[0]
-]
+];
+
+let chat_display = [
+  document.getElementsByClassName("bot-alert1")[0],
+  document.getElementsByClassName("bot-alert2")[0],
+];
+
 let transform = [];
 let opacity = [];
 let index = [];
+let display = [];
+
+for (let i = 0; i<chat_display.length; i++){
+  let computedStyle = window.getComputedStyle(chat_display[i]);
+  display[i] = computedStyle.getPropertyValue("opacity");
+}
+
+
 for (let i = 0; i<item.length; i++){
   let computedStyle = window.getComputedStyle(item[i]);
   transform[i] = computedStyle.getPropertyValue("transform");
@@ -100,7 +114,7 @@ for (let i = 0; i<item.length; i++){
       }
     }
 
-  
+ 
 
 
   let i = num;
@@ -113,6 +127,16 @@ for (let i = 0; i<item.length; i++){
       if (i === 7) {
         i = 1;
       }
+   
+      if(i === 1){
+        chat_display[0].style.opacity = display[1];
+        chat_display[1].style.opacity = display[0];
+      }
+
+      if(i === 4){
+        chat_display[0].style.opacity = display[0];
+        chat_display[1].style.opacity = display[1];
+      }
   
       loop(); 
     }, 3000); 
@@ -120,7 +144,7 @@ for (let i = 0; i<item.length; i++){
   
   loop();
 
-  
+
   function toggleChat() {
     const panel = document.getElementById('chatPanel');
     const overlay = document.getElementById('chatOverlay');
