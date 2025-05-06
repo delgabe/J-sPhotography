@@ -476,7 +476,7 @@ span{
 } 
 
 .package-type1{
-  color: rgb(145, 113, 69);
+  color:rgb(65, 54, 54);
 } 
 
 .package-type2{
@@ -503,7 +503,7 @@ span{
 } 
 
 .package-price1{
-  color: rgb(145, 113, 69);
+  color:rgb(65, 54, 54);
 } 
 
 .package-price2{
@@ -533,7 +533,9 @@ span{
   padding: 10px 30px 10px 30px;
   font-family: Poppins;
   color: #000;
+  background-color: white;
   text-decoration: none;
+  cursor: pointer;
 }
 
 @keyframes opacityanima{
@@ -541,7 +543,164 @@ span{
   to {opacity: 1;}
 }
 
+/* Pop-up */
 
+
+.popover-wrapper{
+  display: flex;
+  position: fixed;
+  width: 1000px;
+  top: 250px;
+  align-self: center;
+  z-index: 9999;
+  
+}
+
+.bronze-pop, .silver-pop, .gold-pop, .diamond-pop{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 500px ;
+  width: 100% ;
+  background-color: rgb(255, 253, 253);
+  border: 1px solid rgba(109, 76, 76, 0.215);
+  font-family: Poppins;
+  
+}
+
+.bronze-pop{
+  display: none;
+}
+
+.silver-pop{
+  display: none;
+}
+
+.gold-pop{
+  display: none;
+}
+
+.diamond-pop{
+  display: none;
+}
+
+.l-pop{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1.3;
+  height: 100%;
+}
+
+.pop-image{
+  width: 85%;
+  height: 70%;
+}
+
+.r-pop{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  
+  height: 100%;
+}
+
+.row-pop1{
+  flex: 2;
+  
+}
+
+.row-pop2{
+  flex: 2;
+  background-color: #ffffff;
+  padding-left: 80px;
+  padding-top: 20px;
+}
+
+.row-pop3{
+  display: flex;
+  align-items: start;
+  justify-content: end;
+  padding-right: 120px;
+  padding-top: 30px;
+  flex: 1.6;
+}
+
+.pop-header{
+  display: flex;
+  height: 100%;
+  flex-direction: row;
+}
+
+.header-text{
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  height: 100%;
+  padding-right: 40px;
+  color:rgb(65, 54, 54);
+}
+
+.header-close{
+  display: flex;
+  justify-content: center;
+  flex: .3;
+  padding-top: 16px;
+  height: 100%;
+  font-size: 30px;
+}
+
+.close-btn2{
+  background: none;
+  border: none;
+  height: 30px;
+  color: rgb(0, 0, 0) !important;
+  font-size: 20px;
+}
+
+.overlay2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+}
+
+.header-title{
+  flex: 2.5;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.header-price{
+  flex: 1;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.diamond-book{
+  font-family: Poppins;
+  font-size: 17px;
+  color: white;
+  font-weight: 500;
+  height: 50px;
+  width: 200px;
+  background-color: #795833;
+  border: transparent;
+  border-radius: 100px;
+
+}
 /* footer */
 
 .footer{
@@ -794,7 +953,9 @@ span{
   .seemore{
     font-size: 14px;
     padding: 5px 20px 5px 20px;
+    background-color: white;
     text-decoration: none;
+    cursor: pointer;
   }
 
   .box1{

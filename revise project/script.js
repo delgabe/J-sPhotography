@@ -1,4 +1,6 @@
 let num = 1;
+let pack_num;
+let pack_num_close;
 let item = [
   document.getElementsByClassName("item1")[0],
   document.getElementsByClassName("item2")[0],
@@ -13,10 +15,19 @@ let chat_display = [
   document.getElementsByClassName("bot-alert2")[0],
 ];
 
+let package_display = [
+  document.getElementsByClassName("bronze-pop")[0],
+  document.getElementsByClassName("silver-pop")[0],
+  document.getElementsByClassName("gold-pop")[0],
+  document.getElementsByClassName("diamond-pop")[0]
+]
+
 let transform = [];
 let opacity = [];
 let index = [];
 let display = [];
+
+
 
 for (let i = 0; i<chat_display.length; i++){
   let computedStyle = window.getComputedStyle(chat_display[i]);
@@ -31,7 +42,55 @@ for (let i = 0; i<item.length; i++){
   index[i] = computedStyle.getPropertyValue("z-index");
 }
 
- 
+function toggleDim() {
+  let overlay = document.getElementsByClassName("overlay2")[0]
+  let computedStyle = window.getComputedStyle(overlay);
+  overlay.style.display = "inherit"
+}
+
+function toggleLit() {
+  let overlay = document.getElementsByClassName("overlay2")[0]
+  let computedStyle = window.getComputedStyle(overlay);
+  overlay.style.display = "none"
+}
+
+    function showmore(pack_num){
+      if (pack_num === 1) {
+        package_display[0].style.display = "inherit"
+        toggleDim();
+      }
+      if (pack_num === 2) {
+        package_display[1].style.display = "inherit"
+        toggleDim();
+      }
+      if (pack_num === 3) {
+        package_display[2].style.display = "inherit"
+        toggleDim();
+      }
+      if (pack_num === 4) {
+        package_display[3].style.display = "inherit"
+        toggleDim();
+      }
+    }
+
+    function showless(pack_num){
+      if (pack_num === 1) {
+        package_display[0].style.display = "none"
+        toggleLit();
+      }
+      if (pack_num === 2) {
+        package_display[1].style.display = "none"
+        toggleLit();
+      }
+      if (pack_num === 3) {
+        package_display[2].style.display = "none"
+        toggleLit();
+      }
+      if (pack_num === 4) {
+        package_display[3].style.display = "none"
+        toggleLit();
+      }
+    }
 
     function change(num){
       

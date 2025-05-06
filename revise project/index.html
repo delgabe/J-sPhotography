@@ -152,6 +152,154 @@
             </div>
           </div>
         </div>
+
+        <!--Popover-->
+        <div class="popover-wrapper">
+          <div class="bronze-pop">
+            <div class="l-pop">
+              <img src="image/pop-image.avif" class="pop-image" />
+            </div>
+            <div class="r-pop">
+              <div class="row-pop1">
+                <div class="pop-header">
+                  <div class="header-text">
+                    <div class="header-title">Bronze Package</div>
+                    <div class="header-price">₱2,000</div>
+                  </div>
+                  <div class="header-close">
+                    <button
+                      class="close-btn2"
+                      onclick="
+                  pack_num_close = 1;
+                  showless(pack_num_close);
+                  "
+                    >
+                      ×
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row-pop2">
+                ● With Stylish <br />
+                ● Make-up <br />
+              </div>
+              <div class="row-pop3">
+                <button class="diamond-book">Book →</button>
+              </div>
+            </div>
+          </div>
+          <div class="silver-pop">
+            <div class="l-pop">
+              <img src="image/pop-image.avif" class="pop-image" />
+            </div>
+            <div class="r-pop">
+              <div class="row-pop1">
+                <div class="pop-header">
+                  <div class="header-text">
+                    <div class="header-title">Silver Package</div>
+                    <div class="header-price">₱3,500</div>
+                  </div>
+                  <div class="header-close">
+                    <button
+                      class="close-btn2"
+                      onclick="
+                pack_num_close = 2;
+                showless(pack_num_close);
+                "
+                    >
+                      ×
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row-pop2">
+                ● With Stylish <br />
+                ● Make-up <br />
+                ● Pictorial <br />
+                ● Video Production <br />
+                ● Venue Creation/Design <br />
+              </div>
+              <div class="row-pop3">
+                <button class="diamond-book">Book →</button>
+              </div>
+            </div>
+          </div>
+          <div class="gold-pop">
+            <div class="l-pop">
+              <img src="image/pop-image.avif" class="pop-image" />
+            </div>
+            <div class="r-pop">
+              <div class="row-pop1">
+                <div class="pop-header">
+                  <div class="header-text">
+                    <div class="header-title">Gold Package</div>
+                    <div class="header-price">₱6,000</div>
+                  </div>
+                  <div class="header-close">
+                    <button
+                      class="close-btn2"
+                      onclick="
+                  pack_num_close = 3;
+                  showless(pack_num_close);
+                  "
+                    >
+                      ×
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row-pop2">
+                ● With Stylish <br />
+                ● Make-up <br />
+                ● Pictorial <br />
+                ● PhotoBooth <br />
+                ● Video Production <br />
+                ● Venue Creation/Design <br />
+              </div>
+              <div class="row-pop3">
+                <button class="diamond-book">Book →</button>
+              </div>
+            </div>
+          </div>
+          <div class="diamond-pop">
+            <div class="l-pop">
+              <img src="image/pop-image.avif" class="pop-image" />
+            </div>
+            <div class="r-pop">
+              <div class="row-pop1">
+                <div class="pop-header">
+                  <div class="header-text">
+                    <div class="header-title">Diamond Package</div>
+                    <div class="header-price">₱10,000</div>
+                  </div>
+                  <div class="header-close">
+                    <button
+                      class="close-btn2"
+                      onclick="
+                pack_num_close = 4;
+                showless(pack_num_close);
+                "
+                    >
+                      ×
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="row-pop2">
+                ● With Stylish <br />
+                ● Make-up <br />
+                ● Pictorial <br />
+                ● PhotoBooth <br />
+                ● Video Production <br />
+                ● Venue Creation/Design <br />
+                ● Program Preparation
+              </div>
+              <div class="row-pop3">
+                <button class="diamond-book">Book →</button>
+              </div>
+            </div>
+          </div>
+        </div>
         <!--package container-->
         <div class="package" id="package">
           <img src="image/box1.png" class="box1" />
@@ -167,7 +315,15 @@
                 <span class="subprice">/ negotiable price</span>
               </div>
               <div>
-                <a href="index.html" class="seemore">See More</a>
+                <button
+                  class="seemore"
+                  onclick="
+                pack_num = 1;
+                showmore(pack_num);
+                "
+                >
+                  See More
+                </button>
               </div>
             </div>
             <div class="package2">
@@ -180,7 +336,15 @@
                 <span class="subprice">/ negotiable price</span>
               </div>
               <div>
-                <a href="index.html" class="seemore">See More</a>
+                <button
+                  class="seemore"
+                  onclick="
+                pack_num = 2;
+                showmore(pack_num);
+                "
+                >
+                  See More
+                </button>
               </div>
             </div>
             <div class="package3">
@@ -193,7 +357,15 @@
                 <span class="subprice"> / negotiable price</span>
               </div>
               <div>
-                <a href="index.html" class="seemore">See More</a>
+                <button
+                  class="seemore"
+                  onclick="
+                pack_num = 3;
+                showmore(pack_num);
+                "
+                >
+                  See More
+                </button>
               </div>
             </div>
             <div class="package4">
@@ -206,7 +378,15 @@
                 <span class="subprice">/ negotiable price</span>
               </div>
               <div>
-                <a href="index.html" class="seemore">See More</a>
+                <button
+                  class="seemore"
+                  onclick="
+                  pack_num = 4;
+                  showmore(pack_num);
+                  "
+                >
+                  See More
+                </button>
               </div>
             </div>
           </div>
@@ -296,6 +476,8 @@
 
     <!-- Overlay for the ChatBot-->
     <div class="overlay" id="chatOverlay" onclick="toggleChat()"></div>
+    <!-- Overlay for the Package-->
+    <div class="overlay2"></div>
 
     <script src="script.js"></script>
   </body>
