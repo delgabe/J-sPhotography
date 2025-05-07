@@ -42,14 +42,26 @@ for (let i = 0; i<item.length; i++){
   index[i] = computedStyle.getPropertyValue("z-index");
 }
 
+function toggleNav(){
+  let overlay1 = document.getElementsByClassName("nav-overlay")[0];
+  let computedStyle = window.getComputedStyle(overlay1);
+  overlay1.style.visibility = "inherit"
+}
+
+function toggleNavClose(){
+  let overlay1 = document.getElementsByClassName("nav-overlay")[0];
+  let computedStyle = window.getComputedStyle(overlay1);
+  overlay1.style.visibility = "hidden"
+}
+
 function toggleDim() {
-  let overlay = document.getElementsByClassName("overlay2")[0]
+  let overlay = document.getElementsByClassName("overlay2")[0];
   let computedStyle = window.getComputedStyle(overlay);
   overlay.style.display = "inherit"
 }
 
 function toggleLit() {
-  let overlay = document.getElementsByClassName("overlay2")[0]
+  let overlay = document.getElementsByClassName("overlay2")[0];
   let computedStyle = window.getComputedStyle(overlay);
   overlay.style.display = "none"
 }
@@ -203,7 +215,7 @@ function toggleLit() {
   
   loop();
 
-
+  
   function toggleChat() {
     const panel = document.getElementById('chatPanel');
     const overlay = document.getElementById('chatOverlay');
