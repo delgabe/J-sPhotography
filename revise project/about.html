@@ -76,8 +76,8 @@
           </div>
           <div class="nav-body">
             <div class="gallery2"><a href="" class="link2">Gallery</a></div>
-            <div class="about2"><a href="" class="link2">About</a></div>
-            <div class="contact2"><a href="" class="link2">Contact</a></div>
+            <div class="about2"><a href="about.html" class="link2">About</a></div>
+            <div class="contact2"><a href="contact.html" class="link2">Contact</a></div>
           </div>
         </nav>
 
@@ -101,21 +101,22 @@
 
           <div class="nav-about"> 
             <button class="aboutbtn">
-             <a href="contact.html" class="about-link">Our Owner</a>
+             <a href="#go-to-owner" class="about-link">Our Owner</a>
             </button>
             <button class="aboutbtn">
-             <a href="contact.html" class="about-link">Our Team</a>
+             <a href="#go-to-team" class="about-link">Our Team</a>
             </button>
             <button class="aboutbtn">
-              <a href="contact.html" class="about-link">Our Journey</a>
+              <a href="#go-to-journey" class="about-link">Our Journey</a>
              </button>
              <button class="aboutbtn">
-              <a href="contact.html" class="about-link">Our Objectives</a>
+              <a href="#go-to-mvo" class="about-link">Our Objectives</a>
              </button>
         </div>
          
         <!--introduction-->
-        <div class="introduction">
+        <div id="go-to-owner"></div>
+        <div class="introduction" >
           <div class="intro-photo">
             <img src="image/owner.avif" class="owner-img" />
           </div>
@@ -137,39 +138,43 @@
               creative, and memorable visual content. The business stands as a 
               testament to the idea that pursuing one’s passion—backed by dedication 
               and professional excellence—can lead to meaningful and fulfilling work.
-              <div class="intro-nav">
-                <a href="index.html" class="intro-about">About</a>
-              </div>
+              
             </div>
           </div>
         </div>
 
         <!--team container-->
-        <div class="team" id="team">
-          <div class="team-header">Our Team</div>
+        
+        <div class="team">
+          <div class="team-header" id="go-to-team">Our Team</div>
           <div class="members">
             <div class="member1">
-              <div class="profile-container"><img src="image/owner-withbg.avif" class="member-owner" /></div>
-              <div class="member-name">Joshua S. Guintu </div>
+              
+              <div><div class="member-name">Joshua S. Guintu </div>
               <div class="member-pos">Position: Founder, <br>Main Photographer, Photo Editor</div>
             </div>
+            <div class="profile-container1"><img src="image/owner.avif" class="member-owner" /></div>
+            </div>
             <div class="member2">
-              <div class="profile-container"><img src="image/co-founder.avif" class="member-cofounder" /></div>
-              <div class="member-name">Arianne Joyce R. Guintu  </div>
-              <div class="member-pos">Position: Social media manager<br>.</div>
+                <div class="profile-container2"><img src="image/co-founder.avif" class="member-cofounder" /></div>
+                <div><div class="member-name">Arianne Joyce R. Guintu  </div>
+                <div class="member-pos">Position: Social media manager<br>.</div>
+              </div>
+              </div>
             </div>
           </div>
         
         <!--journey container-->
-        <div class="journey">            
+        
+        <div class="journey" >     
+          <div id="go-to-journey"></div>       
           <div class="journey-container">
-          <div class="journey-header">Our Journey
-            <button class="journey-read" onclick="toggleRead()">Read Stories</button>
-          </div>
-          <div class="stories-body">
-            <div class="stories-1">
-              <div class="value-title1">How It All Started </div>
-              <div class="value-text1">Our story began with a passion that took root in high school—photography. Our founder, a former photography club 
+            <div class="journey-header">Our Journey</div>
+              <div id="go-to-journey"></div>          
+              <div class="stories-body">
+              <div class="stories-1">
+              <div class="stories-title1">How It All Started </div>
+              <div class="stories-text1">Our story began with a passion that took root in high school—photography. Our founder, a former photography club 
                 president, found joy in capturing meaningful moments and telling stories through the lens. Though he pursued a 
                 degree in Industrial Engineering, the creative spark never faded. After graduation, this passion evolved into a full
                 fledged photo and video services business—one built on creativity, dedication, and a desire to turn special 
@@ -178,7 +183,7 @@
             <div class="stories-2">
               <div class="stories-title2">Challenges Encountered </div>
               <div class="stories-text2">As with many startups, the early stages were filled with challenges: limited resources, stiff competition, and the 
-                task of building a name in a saturated market. Establishing trust with clients, managing operations, and 
+                task of building a nsame in a saturated market. Establishing trust with clients, managing operations, and 
                 maintaining quality with minimal manpower were just a few of the obstacles we faced.</div>
             </div>
             <div class="stories-3">
@@ -205,12 +210,18 @@
                 passion for storytelling and strengthened by the trust and love of our clients. Our mission remains the same: to 
                 turn moments into memories, and to make every client feel seen, celebrated, and valued. </div>
             </div>
+            <div class="read-hide-container"> 
+            <button class="journey-read" onclick="toggleRead()">Read Stories</button>
+            <button class="journey-hide" onclick="toggleHide()">Shrink</button>
+          </div>
             </div>
         </div>
 
 
          <!--business-profile container-->
+          
          <div class="profile">
+          <div id="go-to-mvo"></div>
             <div class="mission">
               <div class="mission-header">OUR MISSION</div>
               <div class="mission-body">To provide high-quality, heartfelt photo 

@@ -1,3 +1,7 @@
+*{
+  border: 1px solid red;
+}
+
 
 body{
   margin: 0;
@@ -299,13 +303,15 @@ h5{
 .intro-text{
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 30%;
   z-index: 2;
+  height: 100%;
 }
 
 .intro-text .intro-header{
   font-family: Poppins;
-  font-size: 30px;
+  font-size: 40px;
   height: 100px;
   color: rgb(107, 89, 89);
   font-weight: bold;
@@ -362,8 +368,11 @@ h5{
   margin-top: 400px;
   display: flex;
   flex-direction: column;
-  flex: 8.5;
-  
+  opacity: 0;
+  animation: opacityanima linear 1s;
+  animation-timeline: view();
+  animation-range: entry 30% cover 30% ;
+  animation-fill-mode: both;
 }
 
 .team .team-header{
@@ -372,57 +381,64 @@ h5{
   text-align: center;
   align-items: center;
   width: 100%;
-  font-size: 30px;
+  font-size: 40px;
   font-family:Poppins;
   font-weight: bold;
   color: rgb(107, 89, 89);
   z-index: 6;
- }
+}
 
 .team .members{
   display: flex;
-  flex-direction: row;
-  width: 80%;
-  align-self: center;
-  padding-top: 4%;
+  flex-direction: column;
   justify-content: center;
-  gap: 30px;
-  height: 500px;
-  border-radius: 40px;
-  opacity: 0;
-  animation: opacityanima linear 1s;
-  animation-timeline: view();
-  animation-range: entry 30% cover 40% ;
-  animation-fill-mode: both;
-  }
-
-.profile-container{
+  align-items: center;
+  font-family:Poppins;
+  color: rgb(57, 51, 51);
   width: 100%;
-  border-radius: 30px 30px 0 0 ;
-  overflow: hidden;
+  padding-top: 5%;
+  height: 1000px;
+  border-radius: 40px;
 }
-  
+
+.profile-container1{
+  margin-left: 100px;
+}
+
+.profile-container2{
+  margin-right: 90px;
+}
+ 
 .member1, .member2{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   font-family: Poppins;
+  color: rgb(57, 51, 51);
   text-align: center;
-  width: 30%;
+  width: 100%;
   min-width: 100px;
   transition: .5s;
 }
 
-.member2{
-  width: 25%;
+.member1{
+  background-color: #dbe3d5;
+  transform: skewY(2deg);
 }
+.member2{
+  background-color: #faffe6;
+  position: relative;
+  transform: skewY(2deg);
+}
+
 
 .member-owner{
   display: inline-block;
   width: 340px;
-  height: 430px;
-  border-radius: 30px ;
+  height: 530px;
+  object-fit: cover;
+  border-radius: 20%;
 }
 .member1:hover{
   transition: .5s ease-in-out;
@@ -438,15 +454,17 @@ h5{
 
 .member-name{
   margin-top: 20px;
+  font-size: 20px;
   font-weight: bold;
 }
 
 .member-cofounder{
   display: inline-block;
-  width: 500px;
-  height: 430px;
-  scale: 1.4;
-  
+  width: 340px;
+  height: 530px;
+  object-fit:cover;
+  border-radius: 100%;
+  scale: 1.2;
 }
 
 @keyframes opacityanima{
@@ -457,13 +475,12 @@ h5{
 /*journey*/
 
 .journey{
-  margin-top: 500px;
+  margin-top: 800px;
   width: 100%;
-  height: 800px;
   font-family: Poppins;
   animation: opacityanima linear 1s;
   animation-timeline: view();
-  animation-range: entry 30% cover 30% ;
+  animation-range: entry 0% cover 20% ;
   animation-fill-mode: both;
 }
 
@@ -479,14 +496,21 @@ h5{
   display: flex;
   justify-content: center;
   gap: 40px ;
-  font-size: 30px;
+  font-size: 40px;
   font-weight: bold;
   color: rgb(107, 89, 89);
   margin-bottom: 70px;
   flex: 1;
 }
 
+.read-hide-container{
+  position: relative;
+  width: 160px;
+  height: 40px;
+  padding-top: 10px;
+}
 .journey-read{
+  position: absolute;
   font-family: Poppins;
   border: 1px solid rgb(85, 54, 54);
   border-radius: 30px;
@@ -494,6 +518,22 @@ h5{
   background-color: rgb(85, 54, 54);
   color:white;
   font-size: 15px;
+  height: 30px;
+  width: 150px;
+  visibility: inherit;
+}
+
+.journey-hide{
+  font-family: Poppins;
+  border: 1px solid rgb(85, 54, 54);
+  border-radius: 30px;
+  padding: 0 20px  0 20px  ;
+  background-color: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
+  font-size: 15px;
+  height: 30px;
+  width: 150px;
+  visibility: hidden;
 }
 
 .journey-read:hover{
@@ -501,29 +541,35 @@ h5{
   color: #000;
 }
 
+.journey-hide:hover{
+  background-color: rgb(85, 54, 54);
+  color: #ffffff;
+}
 
 .stories-body{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
-  text-align: justify;
+  align-items: center;
+  text-align: center;
   gap: 20px ;
   flex: 2;
   font-size: 20px;
   font-weight: 500;
   color: rgb(57, 51, 51);
-  filter: blur(2px);
 }
 
 .stories-1, .stories-2, .stories-3, .stories-4, .stories-5{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 320px;
-  height: 300px;
-  
+  width: 50%;
 }
+
+.stories-3, .stories-4, .stories-5{
+  display: none;
+}
+
 
 
 .stories-title1, .stories-title2, .stories-title3, .stories-title4, .stories-title5{
@@ -550,11 +596,11 @@ h5{
 .profile{
   display: flex;
   flex-direction: column;
-  margin-top: 800px;
+  margin-top: 500px;
   width: 100%;
   height: 1100px;
   font-family: Poppins;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: bold;
   gap:50px;
   animation: opacityanima linear 1s;
@@ -843,34 +889,34 @@ h5{
     font-weight: 400;
   }
 
-.gallery2, .about2, .contact2{
-  display: flex;
-  justify-content: center;
-  width: 15%;
-  min-width: 10%;
-}
+  .gallery2, .about2, .contact2{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    min-width: 10%;
+  }
 
-.link2{
-  color: rgb(10, 10, 10);
-  text-decoration: none;
-  position: relative;
-}
+  .link2{
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+    position: relative;
+  }
 
-.link2::after {
-  
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 1px;
-  bottom: -1px;
-  left: 0;
-  background-color: #000000; 
-  transition: width 0.3s ease;
-}
+  .link2::after {
+    
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -1px;
+    left: 0;
+    background-color: #000000; 
+    transition: width 0.3s ease;
+  }
 
-.link2:hover::after {
-  width: 100%;
-}
+  .link2:hover::after {
+    width: 100%;
+  }
 
   .identity{
     width: 230px;
@@ -937,8 +983,12 @@ h5{
     text-align: center;
 }
 
+  .intro-body{
+    width: 400px;
+}
+
   .intro-photo .owner-img {
-    width: 100%;
+    width: 250px;
 }  
    
   .team .team-header{
@@ -964,15 +1014,24 @@ h5{
     opacity: 1;
   }
   
-
   .member1, .member2{
     background-color: rgb(255, 255, 255);
     border: 1px solid rgba(118, 82, 82, 0.241);
     width: 100%;
     margin-bottom: 3px;
     border-radius: 3px;
-    height: 100%;
+    height: 30%;
     z-index: 2;
+  }
+
+  .member-owner{
+    width: 200px;
+    height: 300px;
+  }
+
+  .member-cofounder{
+    width: 200px;
+    height: 300px;
   }
 
   .member1:hover{
@@ -997,15 +1056,15 @@ h5{
     margin-bottom: 50px;
   }
   
-  .about-link{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 0;
-    font-size: 12px;
-    height: 40px;
-    width: 100%; 
+  .profile{
+    width: 500px;
   }
+
+  .values-body{
+    flex-direction: column;
+  }
+
+
    
   .footer{
     flex-direction: column ;

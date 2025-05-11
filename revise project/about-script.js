@@ -5,7 +5,16 @@ let chat_display = [
   document.getElementsByClassName("bot-alert2")[0],
 ];
 
-let readstories= document.getElementsByClassName("stories-body")[0];
+let showstories = [
+  document.getElementsByClassName("stories-3")[0],
+  document.getElementsByClassName("stories-4")[0],
+  document.getElementsByClassName("stories-5")[0]
+]
+
+let show_hide = [
+  document.getElementsByClassName("journey-read")[0],
+  document.getElementsByClassName("journey-hide")[0]
+]
 
 let display = [];
 
@@ -44,8 +53,21 @@ for (let i = 0; i<chat_display.length; i++){
   
   loop();
 
+  
   function toggleRead() {
-    readstories.style.filter = "none";
+    showstories[0].style.display = "inherit";
+    showstories[1].style.display = "inherit";
+    showstories[2].style.display = "inherit";
+    show_hide[0].style.visibility = "hidden";
+    show_hide[1].style.visibility = "inherit";
+  }
+
+  function toggleHide() {
+    showstories[0].style.display = "none";
+    showstories[1].style.display = "none";
+    showstories[2].style.display = "none";
+    show_hide[0].style.visibility = "inherit";
+    show_hide[1].style.visibility = "hidden";
   }
 
   function toggleChat() {
