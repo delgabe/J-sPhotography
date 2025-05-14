@@ -77,7 +77,31 @@ for (let i = 0; i<chat_display.length; i++){
     panel.classList.toggle('open');
     overlay.classList.toggle('visible');
   }
-  
+
+function toggleNav(){
+  let overlay1 = document.getElementsByClassName("nav-overlay")[0];
+  let computedStyle = window.getComputedStyle(overlay1);
+  overlay1.style.visibility = "inherit"
+}
+
+function toggleNavClose(){
+  let overlay1 = document.getElementsByClassName("nav-overlay")[0];
+  let computedStyle = window.getComputedStyle(overlay1);
+  overlay1.style.visibility = "hidden"
+}
+
+  function toggleLit() {
+  let overlay = document.getElementsByClassName("overlay2")[0];
+  let computedStyle = window.getComputedStyle(overlay);
+  overlay.style.display = "none"
+}
+
+function toggleDim() {
+  let overlay = document.getElementsByClassName("overlay2")[0];
+  let computedStyle = window.getComputedStyle(overlay);
+  overlay.style.display = "inherit"
+}
+
   function addUserMessage(text) {
       const chatContent = document.querySelector('.chat-content');
     

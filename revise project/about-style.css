@@ -1,7 +1,7 @@
-
-
-body{
+html, body{
   margin: 0;
+  scrollbar-width:none ;
+  
 }
 
 .main{
@@ -202,7 +202,8 @@ h4{
   position: absolute;
   bottom: 3px;
   margin-right: 120px ;
-  color:rgb(244, 244, 244);
+  color:rgb(255, 255, 255);
+  background-color: #0c140c3d;
   border: .5px solid rgb(255, 255, 255);
   border-radius: 50px;
   padding: 4px 10px 2px 10px;
@@ -214,6 +215,18 @@ h5{
   color:rgb(255, 255, 255);
   padding: 4px 10px 2px 10px;
   margin-left: 240px;
+}
+
+.overlay2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+  transition: opacity 0.3s ease;
 }
 
 /*navigation through about us*/
@@ -235,7 +248,7 @@ h5{
   height: 50px;
   width: 200px;
   border: 1px solid #795833;
-  background-color: #795833;
+  background-color: #604a30;
   border-radius: 100px;
   padding: 0;
   transition: background-color .5s ease-out;
@@ -280,23 +293,6 @@ h5{
   z-index: 1;
 }
 
-@keyframes camerashake {
-  0%{
-    transform: rotate(0);
-  }
-  30% {
-    transform: rotate(15deg);
-    opacity: 0;
-  }
-  60% {
-    transform: rotate(-15deg);
-    opacity: .5;
-  }
-  100%{
-    transform: rotate(0);
-  }
-}
-
 .intro-text{
   display: flex;
   flex-direction: column;
@@ -328,37 +324,6 @@ h5{
   
 }
 
-.intro-text .intro-nav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  height: 30px;
-  width: 100px;
-  border: 1px solid rgb(85, 54, 54);
-  background-color: rgb(85, 54, 54);
-  border-radius: 20px ;
-  transition: background-color .5s ease-out;
- }
-
-.intro-about{
-  font-family: Poppins;
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  height: 30px;
-  width: 100px;
-  text-align: center;
-  padding-top:5px ;
-}
-
-.intro-text .intro-nav:hover{
-  background-color: rgb(255, 255, 255);
-}
-
-.intro-about:hover{
-  color: rgb(17, 17, 17);
-} 
 
 /* team */
 .team{
@@ -420,33 +385,36 @@ h5{
 }
 
 .member1{
-  background-color: #dbe3d5;
+  background-color: #f0ffe4;
   transform: skewY(2deg);
+  z-index: 6;
 }
 .member2{
   background-color: #faffe6;
   position: relative;
   transform: skewY(2deg);
+  overflow: hidden;
 }
 
 
 .member-owner{
   display: inline-block;
   width: 340px;
-  height: 530px;
+  height: 500px;
   object-fit: cover;
   border-radius: 20%;
+  scale: .9;
 }
 .member1:hover{
   transition: .5s ease-in-out;
   scale: 1.1;
-  z-index: 6;
+  
 }
 
 .member2:hover{
   transition: .5s ease-in-out;
   scale: 1.1;
-  z-index: 6;
+
 }
 
 .member-name{
@@ -457,7 +425,7 @@ h5{
 
 .member-cofounder{
   display: inline-block;
-  width: 340px;
+  width: 380px;
   height: 530px;
   object-fit:cover;
   border-radius: 100%;
@@ -838,9 +806,10 @@ h5{
     height: 35%;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    padding: 0;
     right: 0;
     z-index: 9999;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+    
   }
   
   .nav-header{
@@ -850,19 +819,19 @@ h5{
     width: 100%;
     height: 100px;
     background-color: #000000;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .nav_logo2{
-    width: 80px;
+    width: 70px;
   }
 
   .nav_companyname2{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: normal;
     width: 260px;
-    color: white;
-    margin-left: 10px;
+    color: #ffffff ;
+    margin-left: 20px;
   }
 
   .close-btn3{
@@ -886,7 +855,7 @@ h5{
     font-weight: 400;
   }
 
-  .gallery2, .about2, .contact2{
+  .gallery2, .home2, .contact2{
     display: flex;
     justify-content: center;
     width: 15%;
@@ -962,6 +931,21 @@ h5{
     width: 100px;
   }
 
+  h4{
+    font-size: 13px;
+    margin-right: 80px;
+  }
+  
+  h5{
+    margin-left: 230px;
+  }
+
+  .nav-about .aboutbtn{
+    font-size: 10px;
+    height: 30px;
+    padding-top: 20px;
+  }
+
   .introduction{
     flex-direction: column;
     align-items: center;
@@ -987,6 +971,11 @@ h5{
   .intro-photo .owner-img {
     width: 250px;
 }  
+
+  .profile-container1, .profile-container2{
+    margin-left: 0;
+    margin-right: 0;
+  }
    
   .team .team-header{
     display: flex;
@@ -1012,8 +1001,8 @@ h5{
   }
   
   .member1, .member2{
-    background-color: rgb(255, 255, 255);
-    border: 1px solid rgba(118, 82, 82, 0.241);
+    background-color: rgb(255, 249, 249);
+    border: 1px solid rgba(118, 82, 82, 0);
     width: 100%;
     margin-bottom: 3px;
     border-radius: 3px;

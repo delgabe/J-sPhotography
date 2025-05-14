@@ -851,6 +851,7 @@ span{
     justify-content: center;
   }
 
+  
   .nav-overlay{
     visibility: hidden;
     display: flex;
@@ -859,9 +860,9 @@ span{
     height: 35%;
     width: 100%;
     background-color: rgb(255, 255, 255);
+    padding: 0;
     right: 0;
     z-index: 9999;
-    border: 1px solid rgba(0, 0, 0, 0.06);
     
   }
   
@@ -872,20 +873,21 @@ span{
     width: 100%;
     height: 100px;
     background-color: #000000;
-    padding-left: 20px;
+    padding-left: 30px;
   }
 
   .nav_logo2{
-    width: 80px;
+    width: 70px;
   }
 
   .nav_companyname2{
     font-size: 20px;
-    font-weight: 400;
+    font-weight: normal;
     width: 260px;
-    color: white;
-    margin-left: 10px;
+    color: #ffffff ;
+    margin-left: 20px;
   }
+
 
   .close-btn3{
     font-size: 25px;
