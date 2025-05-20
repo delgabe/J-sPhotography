@@ -116,8 +116,8 @@ html, body{
   display: inline-block;
 }
 
-.home, .gallery, .about, .contact, .identity{
-  width: 15%;
+.dashboard, .home, .gallery, .about, .contact, .identity{
+  width: 13%;
   min-width: 10%;
 }
 

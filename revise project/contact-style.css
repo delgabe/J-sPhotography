@@ -119,8 +119,8 @@ body {
     color: rgb(255, 255, 255)
 }
 
-.home, .gallery, .about, .contact {
-    width: 15%;
+.dashboard, .home, .gallery, .about, .contact {
+    width: 13%;
     min-width: 10%;
 }
 
