@@ -707,10 +707,10 @@ h5{
   flex-direction: column;
   font-family: Poppins;
   margin-top: 200px ;
-  height: 350px;
+  height: 30px;
   animation: opacityanima linear 1s;
   animation-timeline: view();
-  animation-range: entry 30% cover 30% ;
+  animation-range: entry 1% cover 2% ;
   animation-fill-mode: both;
 }
 
@@ -1078,21 +1078,11 @@ h5{
 
    
   .footer{
-    flex-direction: column ;
-    height: 500px;
+    height: 30px;
     margin-top: 10px;
   }
 
-  .footer-wrapper{
-    flex-direction: column;
-  }
-  
-  .rd-col-top{
-    margin-top: 0;
-    font-size: 14px;
-    position:static;
-    transform: translate(105px , -30px);
-  }
+
   
   .botbutton{
     width: 70px !important;
