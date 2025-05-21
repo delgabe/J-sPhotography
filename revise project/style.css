@@ -304,8 +304,8 @@ span{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 350px;
-  margin-bottom: 100px;
+  margin-top: 550px;
+  margin-bottom: 550px;
   height: 400px;
   width: 100%;
 }
@@ -403,8 +403,8 @@ span{
   margin-top: 200px;
   display: flex;
   flex-direction: column;
-  flex: 8.5;
-  
+  height: 800px;
+  margin-bottom: 70px;
 }
 
 .package .box1 {
@@ -779,41 +779,10 @@ span{
   padding-right: 14.5%;
   height: 30px;
   background-color: rgb(91, 81, 81);
+  
 }
 
-.nd-col-faq{
-  cursor: pointer;
-}
 
-.rd-col-top{
-  position: absolute;
-  border: 1px solid  rgb(85, 54, 54);
-  background-color: rgb(85, 54, 54);
-  border-radius: 30px;
-  margin-top: 70px;
-  right: 230px;
-  width: 140px;
-  height: 36px;
-  transition: background-color .5s ease-out;
-}
-
-.go-top{
-  text-align: center;
-  display: inline-block;
-  padding-top: 7px;
-  height: 30px;
-  width: 100%;
-  text-decoration: none;
-  color: white;
-}
-
-.rd-col-top:hover{
-  background-color: rgb(255, 255, 255);
-}
-
-.go-top:hover{
-  color: #000;
-}
 
 @media only screen and (max-width: 768px) {
   .sidenav{
@@ -824,6 +793,11 @@ span{
   .right-body{
     margin-left: 0px;
   }
+
+  .main{
+    height: 2800px;
+  }
+
   .navigation{
     flex-direction: column;
     justify-content: center;

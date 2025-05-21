@@ -214,6 +214,17 @@ h5{
   margin-left: 300px;
 }
 
+.audit{
+  display: flex;
+  justify-content: center;
+  color: white;
+  background-color:rgb(57, 47, 47);
+  border-color: rgb(57, 47, 47);
+  width: 200px;
+  right:70px;
+  cursor: pointer;
+}
+
 /* report */
 
 .reports{
