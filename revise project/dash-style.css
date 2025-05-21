@@ -8,7 +8,7 @@ html, body{
 .main{
   display: flex;
   flex-direction: row;
-  height: 3500px;
+  height: 910px;
   width: 100%;
 
 }
@@ -159,7 +159,7 @@ html, body{
   flex-direction: column;
   background-color:  rgb(255, 255, 255);
   margin-top: 100px;
-  height: 800px;
+  height: 210px;
 }
 
 
@@ -171,22 +171,22 @@ html, body{
 .tagline .tagline-text{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   background-color: rgba(255, 255, 255, 0.81);
   backdrop-filter:blur(5px);
+  padding-left: 70px;
   width: 100%;
   height: 90%;
 }
 
-.company-name{
+.dash-header{
   font-size: 80px;
   color:rgb(65, 54, 54);
   font-family:Poppins;  
   margin: 0;
 }
 
-.company{
-  padding-top: 30px;
+.company-dash{
   padding-bottom: 30px;
   display: flex;
   align-items: center;
@@ -212,6 +212,99 @@ h5{
   color:rgb(57, 47, 47);
   padding: 4px 10px 2px 10px;
   margin-left: 300px;
+}
+
+/* report */
+
+.reports{
+  height: 600px;
+}
+
+.report-summary{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px ;
+  height: 35%;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.report-graph{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 70px;
+  gap: 30px ;
+  height: 65%;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.report-col1, .report-col2, .report-col3, .report-col4{
+  font-family: Poppins;
+  width: 400px;
+  height: 100%;
+  border-radius: 23px;
+  z-index: 2;
+  border: 1px solid rgb(57, 47, 47);
+} 
+
+
+.report-header{
+  margin-top: 20px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.report-body{
+  font-weight: bold;
+  font-size: 30px;
+  padding-left: 30px;
+}
+
+.graph-col1, .graph-col2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 90%;
+  border: 1px solid rgb(57, 47, 47);
+  z-index: 2;
+} 
+
+.graph-col3{
+  width: 430px;
+  height: 90%;
+  scale: 1.2;
+}
+
+/* footer */
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  font-family: Poppins;
+  z-index: 2;
+  height: 30px;
+  animation: opacityanima linear 1s;
+  animation-timeline: view();
+  animation-range: entry 9% cover 1% ;
+  animation-fill-mode: both;
+}
+
+
+.footnote{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #f8f8f8;
+  font-family: Lato;
+  font-size: 12px;
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+  height: 30px;
+  background-color: rgb(91, 81, 81);
 }
 
 
