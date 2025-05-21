@@ -63,6 +63,11 @@ html, body{
   align-items: center;
   }
   
+.socials a{
+  display: flex;
+  justify-content: center;
+}  
+  
 .socials img{
  
   width: 40%;
