@@ -10,53 +10,101 @@
     @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
   </style>
 </head>
+
 <body>
-
-  <div class="main">
-    <!-- Sidebar -->
-    <aside class="sidenav">
-      <div class="socials">
-        <img src="image/fb.png" />
-        <img src="image/ig.png" />
-        <img src="image/x.png" />
-      </div>
-      <div class="visit-container">
-        <h1 class="visit-text">
-          VISIT US &nbsp;&nbsp;
-          <div class="vl"></div>
-        </h1>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <section class="right-body">
-
-      <!-- Navigation Bar -->
-      <nav class="navigation">
-        <div class="identity">
-          <img src="image/logo.png" class="nav_logo" />
-          <h6 class="nav_companyname">J's Photography</h6>
+   <!--Main Container-->
+    <div class="main">
+      <!--sidebar-->
+      <aside class="sidenav">
+        <div class="socials">
+          <a href="https://www.facebook.com/JsgPh" target="_blank"
+            ><img src="image/fb.png"
+          /></a>
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img src="image/ig.png"
+          /></a>
+          <a href="https://x.com/home" target="_blank"
+            ><img src="image/x.png"
+          /></a>
         </div>
-        <div class="nav-menu">
-          <a href="index.html" class="link">Home</a>
-          <a href="gallery.html" class="link">Gallery</a>
-          <a href="about.html" class="link">About</a>
-          <a href="contact.html" class="link">Contact</a>
+        <div class="visit-container">
+          <h1 class="visit-text">VISIT US &nbsp;&nbsp;</h1>
         </div>
-        <div class="hamburger" onclick="toggleMobileMenu()">
-          <div></div>
-          <div></div>
-          <div></div>
+        <div class="user-prof-icon">
+          <a href="user-profile.html"><img src="image/user.png" /></a>
         </div>
-      </nav>
+        <div class="settings">
+          <a href="settings.html"><img src="image/settingslogo.png" /></a>
+        </div>
+      </aside>
 
-      <div class="mobile-menu" id="mobileMenu">
-        <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </div>
+      <!--right container-->
+      <section class="right-body">
+        <!--top-->
+        <div id="top"></div>
+        <!--navigation container-->
+        <nav class="navigation">
+          <div class="identity">
+            <img src="image/logo.png" class="nav_logo" />
+            <h6 class="nav_companyname">J's Photography</h6>
+          </div>
+          <div class="burgermenu">
+            <img
+              src="image/hamburgermenu.png"
+              class="burgermen"
+              onclick="
+            toggleDim();
+            toggleNav();
+            "
+            />
+          </div>
+          <div class="home">
+            <a href="home.html" class="link home">Home</a>
+          </div>
+          <div class="dashboard">
+            <a href="dashboard.html" class="link home">Dashboard</a>
+          </div>
+          <div class="gallery">
+            <a href="gallery.html" class="link gallery">Gallery</a>
+          </div>
+          <div class="about">
+            <a href="about.html" class="link about">About</a>
+          </div>
+          <div class="contact">
+            <a href="contact.html" class="link contact">Contact</a>
+          </div>
+        </nav>
 
+        <!--nav overlay-->
+        <nav class="nav-overlay">
+          <div class="nav-header">
+            <img src="image/logo.png" class="nav_logo2" />
+            <h6 class="nav_companyname2">J's Photography</h6>
+            <button
+              class="close-btn3"
+              onclick="
+            toggleNavClose()
+            toggleLit()"
+            >
+              ×
+            </button>
+          </div>
+          <div class="nav-body">
+            <div class="dashboard2">
+              <a href="dashboard.html" class="link2">Dashboard</a>
+            </div>
+            <div class="gallery2">
+              <a href="gallery.html" class="link2">Gallery</a>
+            </div>
+            <div class="about2">
+              <a href="about.html" class="link2">About</a>
+            </div>
+            <div class="contact2">
+              <a href="contact.html" class="link2">Contact</a>
+            </div>
+          </div>
+        </nav>
+  
       <!-- Gallery Section -->
       <main class="gallery-section">
         <div class="masonry">
@@ -117,7 +165,11 @@
 
           <!-- Extras -->
           <div class="gallery-block">
-            <div class="gallery-text">CATEGORY 8</div>
+            <div class="gallery-text">MACRO PHOTOGRAPHY</div>
+            <div class="gallery-item">
+              <img src="https://i.pinimg.com/736x/5e/81/77/5e817784e0ef17ca5ddee2277e16c34d.jpg" alt="Lovely Sceneries" />
+              <p class="image-caption">Pay Attention to Cool Details</p>
+            </div>
           </div>
           <div class="gallery-block">
             <div class="gallery-text">CATEGORY 7</div>
@@ -139,139 +191,4 @@
     }
   </script>
 </body>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery Page | J's Photography</title>
-    <link rel="stylesheet" href="gallery-style.css" />
-  </head>
-  <body>
-    <!-- Main container -->
-    <div class="main">
-      <!-- Sidebar -->
-      <aside class="sidenav">
-        <div class="socials">
-          <img src="image/fb.png" />
-          <img src="image/ig.png" />
-          <img src="image/x.png" />
-        </div>
-        <div class="visit-container">
-          <h1 class="visit-text">
-            VISIT US &nbsp;&nbsp;
-            <div class="vl"></div>
-          </h1>
-        </div>
-      </aside>
-
-      <!-- Right Content Area -->
-      <section class="right-body">
-        <!-- Navigation -->
-        <nav class="navigation">
-          <div class="identity">
-            <img src="image/logo.png" class="nav_logo" />
-            <h6 class="nav_companyname">J's Photography</h6>
-          </div>
-
-          <ul class="nav_links">
-            <li><a href="home.html" class="link">Home</a></li>
-            <li><a href="dashboard.html" class="link">Dashboard</a></li>
-            <li><a href="gallery.html" class="link">Gallery</a></li>
-            <li><a href="about.html" class="link">About</a></li>
-            <li><a href="contact.html" class="link">Contact</a></li>
-          </ul>
-
-          <div class="hamburger" onclick="toggleMobileMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-
-          <div id="mobileMenu" class="mobile-menu">
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
-          </div>
-        </nav>
-
-        <!-- Gallery Section -->
-        <main class="gallery-section">
-          <div class="masonry">
-            <!-- DEBUTANTS -->
-            <div class="gallery-text">DEBUTANTS</div>
-            <div class="gallery-item">
-              <img
-                src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt0f2507863f18c29d/6668b61c8c2b6b2a84a4423d/18thBirthday-Hero.jpeg?q=70&width=3840&auto=webp"
-                alt="Sweet 18th Birthday"
-              />
-              <p class="image-caption">Sweet 18th Birthday Photoshoots</p>
-            </div>
-
-            <!-- WEDDING -->
-            <div class="gallery-text">WEDDING</div>
-            <div class="gallery-item">
-              <img
-                src="https://www.investopedia.com/thmb/Hc1AVuq4b-X0xI-jDNJpkZsUDeg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2119857345-6d19fe3889fd4d7f9a174546f02f6beb.jpg"
-                alt="Wonderous Wedding"
-              />
-              <p class="image-caption">Wonderous Wedding Prenup Photoshoots</p>
-            </div>
-
-            <!-- FASHION -->
-            <div class="gallery-text">FASHION</div>
-            <div class="gallery-item">
-              <img
-                src="https://entail.fastsimon.com/en-assets/fastsimon/fit-in/700x700/pexelsclintmaliq136343541024x683-1729091512873.webp"
-                alt="Fashion Showcase"
-              />
-              <p class="image-caption">Fashion Showcase</p>
-            </div>
-
-            <!-- NEWBORN -->
-            <div class="gallery-text">NEWBORN</div>
-            <div class="gallery-item">
-              <img
-                src="https://static.vecteezy.com/system/resources/thumbnails/052/112/653/small_2x/beautiful-newborn-baby-smiling-on-white-cottony-background-photo.jpg"
-                alt="Newborn"
-              />
-              <p class="image-caption">Heartwarming Smiles of Infants</p>
-            </div>
-
-            <!-- LANDSCAPE -->
-            <div class="gallery-text">LANDSCAPE</div>
-            <div class="gallery-item">
-              <img
-                src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg"
-                alt="Lovely Sceneries"
-              />
-              <p class="image-caption">Lovely Sceneries Captured</p>
-            </div>
-
-            <!-- PORTRAIT -->
-            <div class="gallery-text">PORTRAIT</div>
-            <div class="gallery-item">
-              <img
-                src="https://images.squarespace-cdn.com/content/v1/530806bbe4b01885d314f575/1425441723794-480XZ60GYSYM6HMFO61D/image-asset.jpeg"
-                alt="Beautiful Faces"
-              />
-              <p class="image-caption">Images of Beautiful Faces</p>
-            </div>
-
-            <!-- Footer Categories -->
-            <div class="gallery-text">CATEGORY 8</div>
-            <div class="gallery-text">CATEGORY 7</div>
-            <div class="gallery-text">CATEGORY 9</div>
-          </div>
-        </main>
-      </section>
-    </div>
-
-    <!-- Script for mobile menu toggle -->
-    <script>
-      function toggleMobileMenu() {
-        const menu = document.getElementById("mobileMenu");
-        menu.classList.toggle("show");
-      }
-    </script>
-  </body>
 </html>
