@@ -2,7 +2,6 @@
 html, body{
   margin: 0;
   scrollbar-width:none ;
-  
 }
 
 .main{
@@ -162,7 +161,7 @@ html, body{
 .showcase{
   display: flex;
   flex-direction: column;
-  background-color:  rgb(255, 255, 255);
+  
   margin-top: 100px;
   height: 210px;
 }
@@ -177,7 +176,7 @@ html, body{
   display: flex;
   flex-direction: column;
   align-items: start;
-  background-color: rgba(255, 255, 255, 0.81);
+ 
   backdrop-filter:blur(5px);
   padding-left: 70px;
   width: 100%;
@@ -243,7 +242,6 @@ h5{
   gap: 30px ;
   height: 35%;
   width: 100%;
-  background-color: #ffffff;
 }
 
 .report-graph{
