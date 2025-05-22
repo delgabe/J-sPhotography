@@ -29,8 +29,11 @@
                 <div class="visit-container">
                 <h1 class="visit-text">VISIT US &nbsp;&nbsp;</h1>
                 </div>
+                <div class="user-prof-icon">
+                <a href="user-profile.html"><img src="image/user.png" /></a>
+                </div>
                 <div class="settings">
-                <a href=""><img src="image/settingslogo.png" /></a>
+                <a href="settings.html"><img src="image/settingslogo.png" /></a>
                 </div>
             </aside>
 
@@ -121,15 +124,21 @@
                             <img src="user-profile img/Lucy.jpg" alt="Profile Picture"/>
                         </div>
 
-                        <div class="upload-row">
+                        <form action="user-profile.html" method="POST" class="upload-row">
                             <label for="change-prof"><span id="span2">Change your profile picture?</span></label>
                             <input
                                 type="file"
                                 id="change-prof"
                                 name="change-prof"
                                 accept="image/*"
+                                required
                             />
-                        </div>
+                            <div class="submit-button-container">
+                                <button type="submit" name="submit" id="submit-button" value="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="vertical-line"></div>
@@ -137,7 +146,7 @@
                     <div class="fname-form" style="margin-top: 10px;">
                         <div><strong>Name:</strong> <span id="span3">Louis S. Panlaqui</span></div>
 
-                        <div class="upload-col">
+                        <form action="user-profile.php" method="POST" class="upload-col">
                             <label for="change-name"><span id="span2">Update your name?</span></label>
                             <input
                                 type="text"
@@ -147,11 +156,81 @@
                                 required
                             />
                             <div class="submit-button-container">
-                                <button type="submit" name="submit" id="submit-button">
-                                    SUBMIT
+                                <button type="submit" name="submit" id="submit-button" value="submit">
+                                    Submit
                                 </button>
                             </div>
-                        </div>
+                        </form>
+                    </div>
+
+                    <div class="vertical-line"></div>
+
+                    <div class="email-form" style="margin-top: 10px;">
+                        <div><strong>Email:</strong> <span id="span3">louispanlaquis@gmail.com</span></div>
+
+                        <form action="user-profile.php" method="POST" class="upload-col">
+                            <label for="change-email"><span id="span2">Change your email?</span></label>
+                            <input
+                                type="email"
+                                id="change-email"
+                                name="change-email"
+                                placeholder="Enter your email."
+                                required
+                            />
+                            <div class="submit-button-container">
+                                <button type="submit" name="submit" id="submit-button" value="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+
+                <section class="contact-info-container">
+                    <div id="personal-title">
+                        <h2>Contact Info</h2>
+                    </div>
+
+                    <div class="pnumber-form" style="margin-top: 10px;">
+                        <div><strong>Phone Number:</strong> <span id="span4">09496413141</span></div>
+
+                        <form action="user-profile.php" method="POST" class="upload-col">
+                            <label for="change-pnumber"><span id="span2">Change your phone number?</span></label>
+                            <input
+                                type="number"
+                                id="change-pnumber"
+                                name="change-pnumber"
+                                placeholder="Enter your phone number."
+                                required
+                            />
+                            <div class="submit-button-container">
+                                <button type="submit" name="submit" id="submit-button" value="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="vertical-line"></div>
+
+                    <div class="address-form" style="margin-top: 10px;">
+                        <div><strong>Address:</strong> <span id="span5">#889 Purok 7 Balas, Mexico, Pampanga</span></div>
+
+                        <form action="user-profile.php" method="POST" class="upload-col">
+                            <label for="change-pnumber"><span id="span2">Update your address?</span></label>
+                            <input
+                                type="text"
+                                id="change-address"
+                                name="change-address"
+                                placeholder="Enter your address."
+                                required
+                            />
+                            <div class="submit-button-container">
+                                <button type="submit" name="submit" id="submit-button" value="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </section>
             </div>

@@ -43,7 +43,6 @@ body {
 .visit-container {
     height: 55%;
     align-self: center;
-    margin-bottom: 8px;
 }
   
 .visit-text {
@@ -67,6 +66,16 @@ body {
 }
 
 .settings img{
+  width: 35px;
+}
+
+.user-prof-icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.user-prof-icon img{
   width: 35px;
 }
 
