@@ -164,7 +164,6 @@ html, body{
 .showcase{
   display: flex;
   flex-direction: column;
-  
   margin-top: 100px;
   height: 210px;
 }
@@ -179,7 +178,6 @@ html, body{
   display: flex;
   flex-direction: column;
   align-items: start;
- 
   backdrop-filter:blur(5px);
   padding-left: 70px;
   width: 100%;
@@ -221,96 +219,195 @@ h5{
   margin-left: 300px;
 }
 
-.audit{
+.setting-container{
   display: flex;
-  justify-content: center;
-  color: white;
-  background-color:rgb(57, 47, 47);
-  border-color: rgb(57, 47, 47);
-  width: 200px;
-  right:70px;
+  flex-direction: row;
+  gap: 300px ;
+}
+
+
+/* setting card */
+.setting-card {
+  font-family: Poppins;
+  padding-left: 100px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.setting-card h1 {
+  font-size: 30px;
+  color:rgb(85, 54, 54);
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.setting-form {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  color: #060000;
+  margin-bottom: 8px;
+  font-size: 22px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.28);
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #4f4d4d;
+}
+
+.notif-setting{
+  display: flex;
+  align-items: center;
+}
+
+.notif-setting label{
+  margin-bottom: 0;
+  margin-right: 30px ;
+}
+
+input[type="checkbox"]{
+  width: 20px;
+  height: 20px;
+  
+}
+
+.toggle-password {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: #763e0a;
+  font-size: 13px;
   cursor: pointer;
 }
 
-/* report */
-
-.reports{
-  height: 600px;
-}
-
-.report-summary{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 30px ;
-  height: 35%;
+.btn {
+  background-color: #a97c50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
   width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.report-graph{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 70px;
-  gap: 30px ;
-  height: 65%;
-  width: 100%;
-  padding-bottom: 30px;
+.btn:hover {
+  background-color: #c2935f;
 }
 
-.report-col1, .report-col2, .report-col3, .report-col4{
+.signup-text {
+  text-align: center;
+  color: #eee;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.signup-text a {
+  color: #d5a679;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+.notif-col1{
+  margin-bottom: 30px;
+}
+
+/* toggle switch */
+
+.switch {
+  display: inline-block;
+  position: relative;
+  width: 60px;
+  height: 30px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 27px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: rgb(85, 54, 54);
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.btnsave , .btnlogout{
   font-family: Poppins;
-  width: 400px;
-  height: 100%;
-  border-radius: 23px;
-  z-index: 2;
-  border: 1px solid rgb(57, 47, 47);
-  color: rgb(57, 47, 47);
-} 
-
-
-.report-header{
-  margin-top: 20px;
-  font-weight: bold;
-  padding-left: 30px;
-}
-
-.report-body{
-  font-weight: bold;
-  font-size: 30px;
-  padding-left: 30px;
-  margin-bottom: 60px;
-}
-
-.report-stat{
-  padding-left: 30px;
   font-size: 15px;
-  font-weight: 300;
+  width: 200px;
+  height: 60px;
+  border-radius: 30px;
+  border: 1px solid rgb(85, 54, 54);
+  background-color: #795833;
+  color: white;
+  transition: .3s ease-out;
+}
+.btnsave:hover{
+  background-color: white;
+  color: #060000;
 }
 
-.open{
-  opacity: 0.5;
+.btnlogout{
+  margin-left: 20px;
+  background-color: #793333;
 }
 
-.close{
-  opacity: 1;
-}
-.graph-col1, .graph-col2{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 600px;
-  height: 90%;
-  border: 1px solid rgb(57, 47, 47);
-  z-index: 2;
-} 
-
-.graph-col3{
-  width: 430px;
-  height: 90%;
-  scale: 1.2;
+.btnlogout:hover{
+  background-color: #a82a2a;
 }
 
+.closensave{
+  margin-top: 200px;
+}
 /* footer */
 
 .footer{
@@ -323,6 +420,7 @@ h5{
   animation-timeline: view();
   animation-range: entry 9% cover 1% ;
   animation-fill-mode: both;
+  margin-top: 100px;
 }
 
 
@@ -337,15 +435,6 @@ h5{
   padding-right: 14.5%;
   height: 30px;
   background-color: rgb(91, 81, 81);
-}
-
-
-
-@media only screen and (max-width: 600px) {
-  .company-name{
-    font-size: 30px;
- 
-  }
 }
 
 /* Chatbot button */
