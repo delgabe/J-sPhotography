@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(rgb(231, 203, 203),rgb(252, 252, 235));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  color: white;
+  padding: 16px 32px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.skip-btn {
+  background-color: #a97c50;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.skip-btn:hover {
+  background-color: #c2935f;
+}
+
+/* LOGIN CARD */
+.login-card {
+  background-color: #3b2f2f;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-top: 80px;
+}
+
+.login-card h1 {
+  font-family: Poppins;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.logo {
+  width: 80px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+}
+
+.login-form {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  color: #fff;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #ffffff;
+  color: #fff;
+}
+
+input::placeholder {
+  color: #aaa;
+}
+
+.toggle-password {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  display: inline-block;
+  color: #d5a679;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #a97c50;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #c2935f;
+}
+
+.signup-text {
+  text-align: center;
+  color: #eee;
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.signup-text a {
+  color: #d5a679;
+  text-decoration: none;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}

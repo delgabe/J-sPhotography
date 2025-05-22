@@ -1,0 +1,411 @@
+html, body{
+  margin: 0;
+  scrollbar-width:none ;
+}
+
+.main{
+  display: flex;
+  flex-direction: row;
+  height: 1500px;
+  width: 100%;
+}
+
+.sidenav{
+  width: 80px;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.right-body{
+  display: flex;
+  flex-direction: column;
+  flex:1;
+  height: 100%;
+  margin-left: 80px;
+  
+}
+
+/* side navigation*/
+.visit-container{
+  height: 55%;
+  align-self: center;
+}
+
+.visit-text{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  font-family: Lato;
+  font-weight: light;
+  color: rgb(92, 111, 111);
+  font-size: 20px;
+  writing-mode:sideways-lr; 
+  width: 100%;
+  height: 30%;
+  margin: 0;
+}
+
+.settings{
+  display: flex;
+  justify-content: center;
+}
+
+.settings img{
+  width: 35px;
+}
+
+.user-prof-icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.user-prof-icon img{
+  width: 35px;
+}
+
+.socials{
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+.socials a{
+  display: flex;
+  justify-content: center;
+}  
+
+.socials img{
+ 
+  width: 40%;
+  border-radius: 30px;
+  height: auto;
+  margin-bottom:10px ;
+}
+
+/* top navigation*/
+.navigation{
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin-right: 100px;
+  font-family: Lato;
+  font-size: 20px;
+  color: #FFFAEC ;
+  align-items: center;
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  background-color:  rgb(0, 0, 0);
+  z-index: 100;
+  margin-right: 20px;
+}
+
+.nav-overlay{
+  visibility: hidden;
+  display:none;
+}
+
+.identity{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 6%;
+}
+
+.nav_logo{
+  width:70px;
+  margin-right: 20px;
+}
+
+.nav_companyname{
+  font-size: 20px;
+  font-weight: normal;
+  display: inline-block;
+}
+
+.dashboard, .home, .gallery, .about, .contact, .identity{
+  width: 13%;
+  min-width: 10%;
+}
+
+.link{
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -1px;
+  left: 0;
+  background-color: #ffffff; 
+  transition: width 0.3s ease;
+}
+
+.link:hover::after {
+  width: 100%;
+}
+
+.burgermen{
+  width: 70px;
+  display: none;
+}
+ 
+.user-info-section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4.3%;
+    margin-top: 100px;
+    width: calc(100% - 80px);
+    height: auto;
+}
+
+.vertical-line {
+    height: 1px;
+    width: 100%;
+    background-color: rgb(173, 173, 173);
+    margin: 20px 0 10px 0;
+    align-self: stretch;
+}
+
+.submit-button-container {
+    text-align: center; 
+}
+
+#submit-button {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: small;
+    font-weight: 500;
+    border: gray solid 1px;
+    border-radius: 7px;
+    padding: 3px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#span1 {
+    margin-left: 100px;
+}
+
+#span2 {
+    margin-left: 220px;
+}
+
+#span3 {
+    margin-left: 165px;
+}
+
+#span4 {
+    margin-left: 95px;
+}
+
+#span5 {
+    margin-left: 150px;
+}
+
+/* Basic Info - Profile Picture*/
+#personal-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+#personal-title h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+
+.basic-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 2% auto 1% auto;
+    padding: 1% 3% 2% 3%;
+    width: 50%;
+
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+#basic-info-title h1 {
+    font-family: 'Lato', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.profile-pic-cointainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+}
+
+.profile-pic-form, .fname-form , .email-form, .pnumber-form, .address-form {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: large;
+    width: 100%;
+    gap: 15px; 
+}
+
+.upload-row {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px;
+    width: 1;
+}
+
+.center-profile-pic img {    
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: black solid 1px;
+    border-radius: 50%;
+    display: block;
+    margin: 10px auto;
+}
+
+#change-prof {
+    width: 180px;
+}
+
+/* Name Change */
+.upload-col {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px; 
+    margin-top: 10px;
+}
+
+#change-name {
+    border: gray solid 1px;
+    border-radius: 7px;
+    padding: 3px 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Email Change */
+#change-email {
+    border: gray solid 1px;
+    border-radius: 7px;
+    padding: 3px 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Contact Info - Phone Number*/
+.contact-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 2% auto 1% auto;
+    padding: 1% 3% 2% 3%;
+    width: 50%;
+
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+#change-pnumber {
+    border: gray solid 1px;
+    border-radius: 7px;
+    padding: 3px 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* Address */
+#change-address {
+    border: gray solid 1px;
+    border-radius: 7px;
+    padding: 3px 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .sidenav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .right-body {
+    margin-left: 0;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 10px;
+  }
+
+  .dashboard, .home, .gallery, .about, .contact, .identity {
+    width: 100%;
+    min-width: unset;
+    margin-bottom: 10px;
+  }
+
+  .basic-info-container,
+  .contact-info-container {
+    width: 90%;
+    padding: 5%;
+  }
+
+  .profile-pic-cointainer,
+  .profile-pic-form,
+  .upload-col {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #change-name,
+  #change-email,
+  #change-address,
+  #change-pnumber,
+  #change-prof {
+    width: 100%;
+  }
+
+  #span1, #span2, #span3, #span4, #span5 {
+    margin-left: 0;
+  }
+
+  .center-profile-pic img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .submit-button-container {
+    width: 100%;
+    text-align: left;
+  }
+}
