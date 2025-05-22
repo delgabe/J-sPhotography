@@ -1,5 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery Page | J's Photography</title>
+  <link rel="stylesheet" href="gallery-style.css" />
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap");
+  </style>
+</head>
+<body>
+
+  <div class="main">
+    <!-- Sidebar -->
+    <aside class="sidenav">
+      <div class="socials">
+        <img src="image/fb.png" />
+        <img src="image/ig.png" />
+        <img src="image/x.png" />
+      </div>
+      <div class="visit-container">
+        <h1 class="visit-text">
+          VISIT US &nbsp;&nbsp;
+          <div class="vl"></div>
+        </h1>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <section class="right-body">
+
+      <!-- Navigation Bar -->
+      <nav class="navigation">
+        <div class="identity">
+          <img src="image/logo.png" class="nav_logo" />
+          <h6 class="nav_companyname">J's Photography</h6>
+        </div>
+        <div class="nav-menu">
+          <a href="index.html" class="link">Home</a>
+          <a href="gallery.html" class="link">Gallery</a>
+          <a href="about.html" class="link">About</a>
+          <a href="contact.html" class="link">Contact</a>
+        </div>
+        <div class="hamburger" onclick="toggleMobileMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </nav>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <!-- Gallery Section -->
+      <main class="gallery-section">
+        <div class="masonry">
+
+          <!-- DEBUTANTS -->
+          <div class="gallery-block">
+            <div class="gallery-text">DEBUTANTS</div>
+            <div class="gallery-item">
+              <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt0f2507863f18c29d/6668b61c8c2b6b2a84a4423d/18thBirthday-Hero.jpeg?q=70&width=3840&auto=webp" alt="Sweet 18th Birthday" />
+              <p class="image-caption">Sweet 18th Birthday Photoshoots</p>
+            </div>
+          </div>
+
+          <!-- WEDDING -->
+          <div class="gallery-block">
+            <div class="gallery-text">WEDDING</div>
+            <div class="gallery-item">
+              <img src="https://www.investopedia.com/thmb/Hc1AVuq4b-X0xI-jDNJpkZsUDeg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2119857345-6d19fe3889fd4d7f9a174546f02f6beb.jpg" alt="Wedding" />
+              <p class="image-caption">Wonderous Wedding Prenup Photoshoots</p>
+            </div>
+          </div>
+
+          <!-- FASHION -->
+          <div class="gallery-block">
+            <div class="gallery-text">FASHION</div>
+            <div class="gallery-item">
+              <img src="https://entail.fastsimon.com/en-assets/fastsimon/fit-in/700x700/pexelsclintmaliq136343541024x683-1729091512873.webp" alt="Fashion Showcase" />
+              <p class="image-caption">Fashion Showcase</p>
+            </div>
+          </div>
+
+          <!-- PORTRAIT -->
+          <div class="gallery-block">
+            <div class="gallery-text">PORTRAIT</div>
+            <div class="gallery-item">
+              <img src="https://i.pinimg.com/736x/8a/64/b9/8a64b94b6e4e3ecf41f491bfb151277b.jpg" alt="Portrait" />
+              <p class="image-caption">Images of Beautiful Faces</p>
+            </div>
+          </div>
+
+          <!-- NEWBORN -->
+          <div class="gallery-block">
+            <div class="gallery-text">NEWBORN</div>
+            <div class="gallery-item">
+              <img src="https://static.vecteezy.com/system/resources/thumbnails/052/112/653/small_2x/beautiful-newborn-baby-smiling-on-white-cottony-background-photo.jpg" alt="Newborn" />
+              <p class="image-caption">Heartwarming Smiles of Infants</p>
+            </div>
+          </div>
+
+          <!-- LANDSCAPE -->
+          <div class="gallery-block">
+            <div class="gallery-text">LANDSCAPE</div>
+            <div class="gallery-item">
+              <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg" alt="Lovely Sceneries" />
+              <p class="image-caption">Lovely Sceneries Captured</p>
+            </div>
+          </div>
+
+          <!-- Extras -->
+          <div class="gallery-block">
+            <div class="gallery-text">CATEGORY 8</div>
+          </div>
+          <div class="gallery-block">
+            <div class="gallery-text">CATEGORY 7</div>
+          </div>
+          <div class="gallery-block">
+            <div class="gallery-text">CATEGORY 9</div>
+          </div>
+
+        </div>
+      </main>
+
+    </section>
+  </div>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById("mobileMenu");
+      menu.classList.toggle("show");
+    }
+  </script>
+</body>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
