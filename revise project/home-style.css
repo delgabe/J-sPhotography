@@ -355,7 +355,7 @@ span{
   color: rgb(107, 89, 89);
   font-weight: bold;
   z-index: 2;
-  
+  margin-bottom: 30px;
 }
 
 .intro-text .intro-body{
