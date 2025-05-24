@@ -59,6 +59,16 @@ html, body{
   width: 35px;
 }
 
+.audit-trail-icon{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.audit-trail-icon img{
+  width: 35px;
+}
+
 .user-prof-icon{
   display: flex;
   justify-content: center;
