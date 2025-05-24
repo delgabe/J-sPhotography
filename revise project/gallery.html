@@ -11,6 +11,81 @@
   </style>
 </head>
 
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const nav = document.querySelector(".navigation");
+  const gallerySection = document.querySelector(".gallery-section");
+  const galleryItems = document.querySelectorAll(".gallery-item");
+
+  // NAVIGATION BAR SHRINK
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      nav.style.height = "70px";
+    } else {
+      nav.style.height = "100px";
+    }
+  });
+
+  // INTERSECTION OBSERVER TO TRIGGER SECTION VISIBILITY
+  const sectionObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        gallerySection.classList.add("visible");
+      }
+    });
+  }, { threshold: 0.2 });
+
+  sectionObserver.observe(gallerySection);
+
+  // INTERSECTION OBSERVER FOR GALLERY ITEMS
+  const itemObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+        itemObserver.unobserve(entry.target); // only animate once
+      }
+    });
+  }, { threshold: 0.1 });
+
+  galleryItems.forEach((item, index) => {
+    item.style.transitionDelay = `${index * 100}ms`;
+    itemObserver.observe(item);
+  });
+});
+document.addEventListener("DOMContentLoaded", () => {
+  const galleryBlocks = document.querySelectorAll(".gallery-block");
+  const searchInput = document.getElementById("searchInput");
+  const filterLinks = document.querySelectorAll(".filter-dropdown a");
+
+  // FILTER FUNCTION
+  function filterGalleryBy(category) {
+    galleryBlocks.forEach(block => {
+      const blockCategory = block.dataset.category.toLowerCase();
+      if (category === "all" || blockCategory.includes(category.toLowerCase())) {
+        block.style.display = "block";
+      } else {
+        block.style.display = "none";
+      }
+    });
+  }
+
+  // 🔍 SEARCH INPUT FILTER
+  searchInput.addEventListener("input", () => {
+    const query = searchInput.value.trim();
+    filterGalleryBy(query);
+  });
+
+  // 🍔 HAMBURGER DROPDOWN CATEGORY FILTER
+  filterLinks.forEach(link => {
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      const selectedCategory = link.dataset.category;
+      filterGalleryBy(selectedCategory);
+    });
+  });
+});
+</script>
+
 <body>
    <!--Main Container-->
     <div class="main">
@@ -107,13 +182,45 @@
             </div>
           </div>
         </nav>
+
+      <!--Seach Bar-->
+      <div class="search-bar-wrapper">
+  <div class="search-box">
+    <input type="text" placeholder="Search categories..." id="searchInput" />
+    <button class="search-btn">
+      <img src="image/search-icon.png" alt="Search" />
+    </button>
+  </div>
+  <div class="category-filter">
+    <button class="filter-btn">
+      <img src="image/custom-hamburger-icon.webp" alt="Filter" />
+    </button>
+    <div class="filter-dropdown">
+  <a href="#" data-category="Debutants">Debutants</a>
+  <a href="#" data-category="Wedding">Wedding</a>
+  <a href="#" data-category="Fashion">Fashion</a>
+  <a href="#" data-category="Portrait">Portrait</a>
+  <a href="#" data-category="Newborn">Newborn</a>
+  <a href="#" data-category="Landscape">Landscape</a>
+  <a href="#" data-category="Macro Photography">Macro Photography</a>
+  <a href="#" data-category="Category 7">Category 7</a>
+  <a href="#" data-category="Category 8">Category 8</a>
+  <a href="#" data-category="all">Show All</a>
+</div>
+
+  </div>
+  <div class="profile-icon">
+    <a href="user-profile.html"><img src="image/user.png" alt="Profile" /></a>
+  </div>
+</div>
+
   
       <!-- Gallery Section -->
       <main class="gallery-section">
         <div class="masonry">
 
           <!-- DEBUTANTS -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Debutants">
             <div class="gallery-text">DEBUTANTS</div>
             <div class="gallery-item">
               <img src="https://images.contentstack.io/v3/assets/bltcedd8dbd5891265b/blt0f2507863f18c29d/6668b61c8c2b6b2a84a4423d/18thBirthday-Hero.jpeg?q=70&width=3840&auto=webp" alt="Sweet 18th Birthday" />
@@ -122,7 +229,7 @@
           </div>
 
           <!-- WEDDING -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Wedding">
             <div class="gallery-text">WEDDING</div>
             <div class="gallery-item">
               <img src="https://www.investopedia.com/thmb/Hc1AVuq4b-X0xI-jDNJpkZsUDeg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-2119857345-6d19fe3889fd4d7f9a174546f02f6beb.jpg" alt="Wedding" />
@@ -131,7 +238,7 @@
           </div>
 
           <!-- FASHION -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Fashion">
             <div class="gallery-text">FASHION</div>
             <div class="gallery-item">
               <img src="https://entail.fastsimon.com/en-assets/fastsimon/fit-in/700x700/pexelsclintmaliq136343541024x683-1729091512873.webp" alt="Fashion Showcase" />
@@ -140,7 +247,7 @@
           </div>
 
           <!-- PORTRAIT -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Portrait">
             <div class="gallery-text">PORTRAIT</div>
             <div class="gallery-item">
               <img src="https://i.pinimg.com/736x/8a/64/b9/8a64b94b6e4e3ecf41f491bfb151277b.jpg" alt="Portrait" />
@@ -149,7 +256,7 @@
           </div>
 
           <!-- NEWBORN -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Newborn">
             <div class="gallery-text">NEWBORN</div>
             <div class="gallery-item">
               <img src="https://static.vecteezy.com/system/resources/thumbnails/052/112/653/small_2x/beautiful-newborn-baby-smiling-on-white-cottony-background-photo.jpg" alt="Newborn" />
@@ -158,7 +265,7 @@
           </div>
 
           <!-- LANDSCAPE -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Landscape">
             <div class="gallery-text">LANDSCAPE</div>
             <div class="gallery-item">
               <img src="https://good-nature-blog-uploads.s3.amazonaws.com/uploads/2022/01/good-nature-homepage-hero_2-scaled.jpg" alt="Lovely Sceneries" />
@@ -167,18 +274,18 @@
           </div>
 
           <!-- Extras -->
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Macro Photography">
             <div class="gallery-text">MACRO PHOTOGRAPHY</div>
             <div class="gallery-item">
               <img src="https://i.pinimg.com/736x/5e/81/77/5e817784e0ef17ca5ddee2277e16c34d.jpg" alt="Lovely Sceneries" />
               <p class="image-caption">Pay Attention to Cool Details</p>
             </div>
           </div>
-          <div class="gallery-block">
+          <div class="gallery-block" data-category="Category 7">
             <div class="gallery-text">CATEGORY 7</div>
           </div>
-          <div class="gallery-block">
-            <div class="gallery-text">CATEGORY 9</div>
+          <div class="gallery-block" data-category="Category 8">
+            <div class="gallery-text">CATEGORY 8</div>
           </div>
 
         </div>
@@ -193,5 +300,26 @@
       menu.classList.toggle("show");
     }
   </script>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".gallery-item");
+
+    function revealOnScroll() {
+      items.forEach(item => {
+        const rect = item.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          item.classList.add("show");
+        }
+      });
+    }
+
+    // Initial check
+    revealOnScroll();
+
+    // Check on scroll
+    window.addEventListener("scroll", revealOnScroll);
+  });
+</script>
 </body>
 </html>
