@@ -2,6 +2,10 @@ body {
     margin: 0;
     overflow-y: hidden;
 }
+
+html {
+  scroll-behavior: smooth;
+}
   
 .contact-page {
     display: flex;
@@ -519,24 +523,32 @@ body {
     transition: background-color 0.3s ease;
 }
 
+#submit-button:hover {
+  background-color: #5c3d2f;
+  transform: scale(1.05);
+}
+
 /* Responsive Layout */
 @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
         margin-left: 0;
-        width: 100%;
+        width: 95%;
     }
   
     .get-in-touch-box {
         align-items: center;
-        width: 100%;
+        width: 95%;
         margin: 20px 0;
     }
   
     .contact-form {
-        width: 100%;
+        width: 95%;
         height: auto;
         padding: 10px;
+        background-size: cover;
+        background-position: center top;
+        background-attachment: scroll;
     }
   
     .form-row,
@@ -544,7 +556,7 @@ body {
     .form-row3,
     .form-row4 {
         flex-direction: column;
-        height: auto;
+        padding: 10px 0;
     }
   
     .form-fname,
@@ -566,6 +578,12 @@ body {
         width: 100%;
         resize: vertical;
     }
+
+    #package-type,
+    input,
+    textarea {
+        width: 100% !important;
+    }
   
     .social-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -574,5 +592,52 @@ body {
   
     #submit-button {
         width: 100%;
+        padding: 15px;
+        font-size: 18px;
     }
-  }  
+
+    .sidenav {
+        display: none;
+    }
+
+    .contact-navigation {
+        margin-left: 0;
+        justify-content: center;
+    }
+
+    .company-logo-nav {
+        position: static;
+        margin-left: 10px;
+    }
+
+    .urls-contact {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    .dashboard, .home, .gallery, .about, .contact {
+        width: auto;
+        min-width: unset;
+    }
+
+    .intro-text-contact-form h1 {
+        font-size: 22px;
+        padding: 5px;
+    }
+
+    .right-contact-section {
+        width: 100%;
+    }
+
+    .get-in-touch-box {
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .contact-section {
+        margin-top: 120px;
+        padding: 0 10px;
+    }
+}  
