@@ -93,7 +93,7 @@ input[type="text"] {
   border-radius: 8px;
   border: none;
   background-color: #ffffff;
-  color: #fff;
+  color: #000000;
 }
 
 input::placeholder {
