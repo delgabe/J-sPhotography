@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Photography Studio Login</title>
-    <link rel="stylesheet" href="loginstyle.css" />
+    <link rel="stylesheet" href="CSS/loginstyle.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     </style>
@@ -18,7 +18,7 @@
 
       <h1>Login to your Account</h1>
 
-      <form action="home.html">
+      <form action="home.php">
         <div class="login-form">
           <label for="email">Email</label>
           <input type="email" id="email" required />
@@ -36,11 +36,11 @@
     </div>
 
     <nav class="navbar">
-      <form action="home.html">
+      <form action="home.php">
         <button class="skip-btn">Skip Login</button>
       </form>
     </nav>
 
-    <script src="loginscript.js"></script>
+    <script src="Javascript/loginscript.js"></script>
   </body>
 </html>

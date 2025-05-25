@@ -203,7 +203,7 @@ html, body{
 }
 
 #span1 {
-    margin-left: 100px;
+    margin-left: 80px;
 }
 
 #span2 {
@@ -211,15 +211,19 @@ html, body{
 }
 
 #span3 {
-    margin-left: 165px;
+    margin-left: 160px;
 }
 
 #span4 {
-    margin-left: 95px;
+    margin-left: 75px;
 }
 
 #span5 {
-    margin-left: 150px;
+    margin-left: 135px;
+}
+
+#span6 {
+    margin-left: 155px;
 }
 
 /* Basic Info - Profile Picture*/

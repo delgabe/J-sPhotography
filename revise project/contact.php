@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact-style.css" />
+    <link rel="stylesheet" href="CSS/contact-style.css" />
     <title>Document</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap");
@@ -30,13 +30,13 @@
           <h1 class="visit-text">VISIT US &nbsp;&nbsp;</h1>
         </div>
         <div class="user-prof-icon">
-          <a href="user-profile.html"><img src="image/user.png" /></a>
+          <a href="user-profile.php"><img src="image/user.png" /></a>
         </div>
         <div class="audit-trail-icon">
-          <a href="audit-trail.html"><img src="image/audit.png" /></a>
+          <a href="audit-trail.php"><img src="image/audit.png" /></a>
         </div>
         <div class="settings">
-          <a href="settings.html"><img src="image/settingslogo.png" /></a>
+          <a href="settings.php"><img src="image/settingslogo.png" /></a>
         </div>
       </aside>
 
@@ -49,11 +49,11 @@
           </div>
           
           <nav class="urls-contact">
-            <div class="home"><a href="home.html">Home</a></div>
-            <div class="dashboard"><a href="dashboard.html">Dashboard</a></div>
-            <div class="gallery"><a href="gallery.html">Gallery</a></div>
-            <div class="about"><a href="about.html">About</a></div>
-            <div class="contact"><a href="contact.html">Contact</a></div>
+            <div class="home"><a href="home.php">Home</a></div>
+            <div class="dashboard"><a href="dashboard.php">Dashboard</a></div>
+            <div class="gallery"><a href="gallery.php">Gallery</a></div>
+            <div class="about"><a href="about.php">About</a></div>
+            <div class="contact"><a href="contact.php">Contact</a></div>
           </nav>
         </div>
       </section>
@@ -123,7 +123,7 @@
 
           <!--Contact Form-->
           <div class="contact-form-box">
-            <form class="contact-form" action="contact.html">
+            <form class="contact-form" action="contact.php">
               <div class="form-row">
                 <div class="form-fname">
                   <label for="fname">FULL NAME</label>

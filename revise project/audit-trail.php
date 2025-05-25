@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="audit-style.css">
+        <link rel="stylesheet" href="CSS/audit-style.css">
         <title>Audit Trail</title>
         <style>
         @import url("https://fonts.googleapis.com/css2?family=Lekton:ital,wght@0,400;0,700;1,400&display=swap");
@@ -31,13 +31,13 @@
                 <h1 class="visit-text">VISIT US &nbsp;&nbsp;</h1>
                 </div>
                 <div class="user-prof-icon">
-                <a href="user-profile.html"><img src="image/user.png" /></a>
+                <a href="user-profile.php"><img src="image/user.png" /></a>
                 </div>
                 <div class="audit-trail-icon">
-                <a href="audit-trail.html"><img src="image/audit.png" /></a>
+                <a href="audit-trail.php"><img src="image/audit.png" /></a>
                 </div>
                 <div class="settings">
-                <a href="settings.html"><img src="image/settingslogo.png" /></a>
+                <a href="settings.php"><img src="image/settingslogo.png" /></a>
                 </div>
             </aside>
 
@@ -62,19 +62,19 @@
                         />
                     </div>
                     <div class="home">
-                        <a href="home.html" class="link home">Home</a>
+                        <a href="home.php" class="link home">Home</a>
                     </div>
                     <div class="dashboard">
-                        <a href="dashboard.html" class="link home">Dashboard</a>
+                        <a href="dashboard.php" class="link home">Dashboard</a>
                     </div>
                     <div class="gallery">
-                        <a href="gallery.html" class="link gallery">Gallery</a>
+                        <a href="gallery.php" class="link gallery">Gallery</a>
                     </div>
                     <div class="about">
-                        <a href="about.html" class="link about">About</a>
+                        <a href="about.php" class="link about">About</a>
                     </div>
                     <div class="contact">
-                        <a href="contact.html" class="link contact">Contact</a>
+                        <a href="contact.php" class="link contact">Contact</a>
                     </div>
                 </nav>
 
@@ -95,16 +95,16 @@
 
                     <div class="nav-body">
                         <div class="dashboard2">
-                        <a href="dashboard.html" class="link2">Dashboard</a>
+                        <a href="dashboard.php" class="link2">Dashboard</a>
                         </div>
                         <div class="gallery2">
-                        <a href="gallery.html" class="link2">Gallery</a>
+                        <a href="gallery.php" class="link2">Gallery</a>
                         </div>
                         <div class="about2">
-                        <a href="about.html" class="link2">About</a>
+                        <a href="about.php" class="link2">About</a>
                         </div>
                         <div class="contact2">
-                        <a href="contact.html" class="link2">Contact</a>
+                        <a href="contact.php" class="link2">Contact</a>
                         </div>
                     </div>
                 </nav>
@@ -165,7 +165,7 @@
                     </tr>
                 </table>
                 
-                <form action="audit-trail.html" target="_self" class="audit-footer">
+                <form action="audit-trail.php" target="_self" class="audit-footer">
                     <div class="update">Last update as of 2025-05-24 | 8:15 am</div>
                     <button type="submit" name="submit" id="refresh" value="submit">Refresh</button>
                 </div>
